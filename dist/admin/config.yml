@@ -3,19 +3,19 @@
 # ============================================================
 #
 #  ONE PLACEHOLDER TO FILL IN DURING SETUP (see the launch guide):
-#    backend.repo  ->  "your-github-username/crossfit-tbb"
+#    backend.repo  ->  already set to gerard-d-kelly/crossfit-tbb
 #
 #  Logging in: the simplest method (one person) is "Sign in with
 #  token" on the login screen — no extra setup needed. If you'd
 #  prefer a one-click "Sign in with GitHub" button later, deploy the
 #  free auth worker and uncomment the base_url line below.
 #
-#  Everything else is already wired to this site.
+#  Repo is pre-filled below — nothing to change for normal use.
 # ------------------------------------------------------------
 
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/crossfit-tbb        # << CHANGE THIS
+  repo: gerard-d-kelly/crossfit-tbb
   branch: main
   # base_url: https://YOUR-SVELTIA-AUTH.workers.dev  # optional — only for the "Sign in with GitHub" button
 
