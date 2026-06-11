@@ -1,0 +1,78 @@
+# ============================================================
+#  CrossFit TBB — Content admin (Sveltia CMS) configuration
+# ============================================================
+#
+#  ONE PLACEHOLDER TO FILL IN DURING SETUP (see the launch guide):
+#    backend.repo  ->  "your-github-username/crossfit-tbb"
+#
+#  Logging in: the simplest method (one person) is "Sign in with
+#  token" on the login screen — no extra setup needed. If you'd
+#  prefer a one-click "Sign in with GitHub" button later, deploy the
+#  free auth worker and uncomment the base_url line below.
+#
+#  Everything else is already wired to this site.
+# ------------------------------------------------------------
+
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/crossfit-tbb        # << CHANGE THIS
+  branch: main
+  # base_url: https://YOUR-SVELTIA-AUTH.workers.dev  # optional — only for the "Sign in with GitHub" button
+
+# Where uploaded images are stored / linked from.
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+site_url: https://crossfit-tbb.co.uk
+display_url: https://crossfit-tbb.co.uk
+logo_url: https://crossfit-tbb.co.uk/assets/apple-touch-icon.png
+
+# Sentence-case everything in the editor, to match the site's voice.
+collections:
+  - name: content
+    label: Resource Hub
+    description: Add, edit, reorder and delete the articles that appear on the Resource Hub.
+    files:
+      - name: articles
+        label: Articles
+        file: content/articles.json
+        description: Every Resource Hub article. Drag to reorder; the newest date shows first on the site.
+        fields:
+          - name: articles
+            label: Articles
+            label_singular: Article
+            widget: list
+            summary: '{{fields.title}}  ·  {{fields.category}}'
+            fields:
+              - { name: title, label: Title, widget: string }
+              - name: slug
+                label: Slug (the bit in the web address)
+                widget: string
+                pattern: ['^[a-z0-9-]+$', 'Lowercase letters, numbers and dashes only']
+                hint: e.g. how-to-scale-a-workout — keep it unchanged once published so links don't break.
+              - name: category
+                label: Category
+                widget: select
+                options: [Training, Nutrition, Beginners, Competition, Community]
+                default: Training
+              - { name: excerpt, label: Excerpt (shows on cards & previews), widget: text }
+              - { name: author, label: Author, widget: string, default: TBB Team }
+              - { name: role, label: Author role, widget: string, default: CrossFit TBB, required: false }
+              - name: date
+                label: Date
+                widget: datetime
+                date_format: YYYY-MM-DD
+                time_format: false
+                format: YYYY-MM-DD
+              - { name: tags, label: Tags, widget: list, default: [], required: false }
+              - { name: featured, label: Pin as the featured (hero) article, widget: boolean, default: false }
+              - name: cover
+                label: Cover photo
+                widget: image
+                required: false
+                hint: Optional. If left empty, a tasteful category placeholder is used.
+              - { name: avatar, label: Author photo, widget: image, required: false }
+              - name: body
+                label: Article body
+                widget: markdown
+                hint: 'Tip: a quote line starting with **Coach''s note** renders as a highlighted callout box.'

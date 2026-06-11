@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resource Hub — CrossFit TBB</title>
+<meta name="description" content="Training advice, nutrition, competition prep and beginner guidance from the coaches at CrossFit TBB — plus the TBB podcast.">
+<link rel="canonical" href="https://crossfit-tbb.co.uk/resource-hub.html">
+<meta name="theme-color" content="#202020">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CrossFit TBB">
+<meta property="og:title" content="Resource Hub — CrossFit TBB">
+<meta property="og:description" content="Field notes from the box: training, nutrition, competition prep and the TBB podcast.">
+<meta property="og:url" content="https://crossfit-tbb.co.uk/resource-hub.html">
+<meta property="og:image" content="https://crossfit-tbb.co.uk/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://crossfit-tbb.co.uk/assets/og-image.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="_ds/obsidian-design-system-de9ee15d-36d6-4ecf-9105-32450d4c70fa/styles.css">
+<link rel="stylesheet" href="tbb.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="CrossFit TBB home">
+      <span class="mark">CrossFit&nbsp;<b>TBB</b></span>
+      <span class="sub">The Building Box · Belfast</span>
+    </a>
+    <nav id="primary-nav" class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="index.html#memberships">Memberships</a>
+      <a href="resource-hub.html" class="active">Resource Hub</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-primary" href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?purchasable=Pass-7870" target="_blank" rel="noopener">
+        <span class="btn-trial-label">Start your trial week</span>
+        <svg style="width:16px;height:16px"><use href="#i-arrow-right"></use></svg>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg class="nt-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+        <svg class="nt-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6 18 18M18 6 6 18"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HUB HERO + FEATURED ============ -->
+  <section class="section hub-hero">
+    <div class="wrap">
+      <p class="kicker">Resource Hub</p>
+      <h1 class="display h-lg" style="max-width:18ch">Field notes from the box.</h1>
+      <p class="lede">Training advice, nutrition, competition prep and beginner guidance — plus the TBB podcast. Written by the coaches who run the floor.</p>
+
+      <!-- Featured article (rendered from the content store) -->
+      <div id="featured-slot"></div>
+    </div>
+  </section>
+
+  <!-- ============ TOOLBAR + GRID ============ -->
+  <section class="section" style="padding-top:0; border-top:0">
+    <div class="wrap">
+      <div class="hub-toolbar">
+        <div class="search-box">
+          <svg><use href="#i-search"></use></svg>
+          <input type="search" id="hub-search" placeholder="Search articles, topics, tags…" aria-label="Search articles" autocomplete="off">
+        </div>
+        <div class="cat-filter" id="cat-filter" role="group" aria-label="Filter by category"></div>
+      </div>
+
+      <div class="tag-row" id="tag-row">
+        <span class="tag-lead"><svg><use href="#i-hash"></use></svg> Popular</span>
+      </div>
+
+      <p class="hub-resultline" id="result-line"></p>
+
+      <div class="hub-grid" id="hub-grid"></div>
+
+      <div class="hub-empty" id="hub-empty" style="display:none">
+        <h3>No articles found</h3>
+        <p>Try a different search or clear your filters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PODCAST — subscribe CTA (episodes appear as tiles in the grid above) ============ -->
+  <section class="section" id="podcast" style="padding-top:0; border-top:0">
+    <div class="wrap">
+      <div class="pod-subscribe">
+        <span class="spot"><svg><use href="#i-spotify"></use></svg></span>
+        <div class="ps-copy">
+          <h2>The TBB Podcast</h2>
+          <p>Episodes appear as tiles in the grid above — search and filter them like any article. Tap one to play it right here, or follow the show on Spotify.</p>
+        </div>
+        <a class="btn btn-primary" href="https://open.spotify.com/show/7jnRQ30E4Yz9mEwXxY8f49?si=79e448d635ac4957" target="_blank" rel="noopener">Subscribe on Spotify<svg style="width:16px;height:16px"><use href="#i-arrow-up-right"></use></svg></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="index.html" aria-label="CrossFit TBB home"><span class="mark">CrossFit&nbsp;<b>TBB</b></span></a>
+        <p class="fdesc">Belfast's No.1 CrossFit space. Coach-led training, real community, premium recovery.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/crossfit_tbb" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-instagram"></use></svg></a>
+          <a href="https://www.facebook.com/thebuildingboxbelfast/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-facebook"></use></svg></a>
+          <a href="https://www.linkedin.com/company/crossfit-tbb" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"></use></svg></a>
+          <a href="https://linktr.ee/thebuildingbox" target="_blank" rel="noopener" aria-label="Linktree"><svg><use href="#i-link"></use></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html#memberships">Memberships</a></li>
+          <li><a href="resource-hub.html">Resource Hub</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get going</h5>
+        <ul>
+          <li><a href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?purchasable=Pass-7870" target="_blank" rel="noopener">£1 trial week</a></li>
+          <li><a href="https://www.wodboard.com/locations/558/timetable/630d60eebe" target="_blank" rel="noopener">Timetable</a></li>
+          <li><a href="https://tr.ee/fl_O3_2IQK" target="_blank" rel="noopener">Book a drop-in</a></li>
+          <li><a href="https://www.crossfit.com/gym/32712/crossfit-tbb" target="_blank" rel="noopener">Find us on CrossFit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <address class="addr">
+          Unit 7, Owen O'Cork Mill<br>
+          288 Beersbridge Rd<br>
+          Belfast · BT5 5DX<br><br>
+          <a href="mailto:info@thebuildingbox.co.uk">info@thebuildingbox.co.uk</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 CrossFit TBB · The Building Box</p>
+      <p>Owen O'Cork Mill, Belfast BT5 5DX</p>
+    </div>
+  </div>
+</footer>
+
+<script src="icons.js"></script>
+<script src="nav.js"></script>
+<script src="image-slot.js"></script>
+<script src="posts.js"></script>
+<script src="store.js"></script>
+<script src="spotify.js"></script>
+<script>
+  // Theme controller shared across pages (localStorage-backed).
+  window.TBB = (function () {
+    var d = document.documentElement;
+    function set(attr, val) { d.setAttribute('data-' + attr, val); try { localStorage.setItem('tbb-' + attr, val); } catch (e) {} }
+    function get(attr, def) { try { return localStorage.getItem('tbb-' + attr) || def; } catch (e) { return def; } }
+    function toggleTheme() { set('theme', d.getAttribute('data-theme') === 'light' ? 'dark' : 'light'); }
+    return { set: set, get: get, toggleTheme: toggleTheme };
+  })();
+</script>
+<script src="hub.js"></script>
+
+</body>
+</html>

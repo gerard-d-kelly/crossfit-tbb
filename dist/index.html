@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-hero="b" data-memberships="cards">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CrossFit TBB — Belfast's No.1 CrossFit space</title>
+<meta name="description" content="Belfast's No.1 CrossFit space. Coach-led, community-driven training with in-house programming, qualified coaches in every class, and a private recovery suite. Start with a trial week.">
+<link rel="canonical" href="https://crossfit-tbb.co.uk/">
+<meta name="theme-color" content="#202020">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CrossFit TBB">
+<meta property="og:title" content="CrossFit TBB — Belfast's No.1 CrossFit space">
+<meta property="og:description" content="Coach-led CrossFit for every level in East Belfast. Real community, in-house programming, premium recovery. Start with a trial week.">
+<meta property="og:url" content="https://crossfit-tbb.co.uk/">
+<meta property="og:image" content="https://crossfit-tbb.co.uk/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CrossFit TBB — Belfast's No.1 CrossFit space">
+<meta name="twitter:description" content="Coach-led CrossFit for every level in East Belfast. Start with a trial week.">
+<meta name="twitter:image" content="https://crossfit-tbb.co.uk/assets/og-image.png">
+
+<!-- Icons / PWA -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Obsidian Design System tokens -->
+<link rel="stylesheet" href="_ds/obsidian-design-system-de9ee15d-36d6-4ecf-9105-32450d4c70fa/styles.css">
+<!-- CrossFit TBB visual system (built on the tokens) -->
+<link rel="stylesheet" href="tbb.css">
+
+<!-- Local-business structured data (helps Google show address, etc.) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "CrossFit TBB — The Building Box",
+  "description": "Belfast's No.1 CrossFit space. Coach-led training, real community, premium recovery.",
+  "url": "https://crossfit-tbb.co.uk/",
+  "email": "info@thebuildingbox.co.uk",
+  "image": "https://crossfit-tbb.co.uk/assets/og-image.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Unit 7, Owen O'Cork Mill, 288 Beersbridge Road",
+    "addressLocality": "Belfast",
+    "postalCode": "BT5 5DX",
+    "addressCountry": "GB"
+  },
+  "sameAs": [
+    "https://www.instagram.com/crossfit_tbb",
+    "https://www.facebook.com/thebuildingboxbelfast/"
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ ICON SPRITE (Lucide-style stroke icons) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="i-base" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></g>
+  </defs>
+  <symbol id="i-dumbbell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-warehouse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z"/><path d="M6 18h12"/><path d="M6 14h12"/><rect width="12" height="12" x="6" y="10"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+  <symbol id="i-waves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.5 2.6a.55.55 0 0 1 1 0l2.3 4.9 5.2.6c.45.05.63.6.3.9l-3.9 3.5 1 5.3c.08.45-.4.8-.8.57L12 16.3l-4.6 2.6c-.4.23-.88-.12-.8-.57l1-5.3-3.9-3.5c-.33-.3-.15-.85.3-.9l5.2-.6z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M6 4.5v15a1 1 0 0 0 1.5.86l13-7.5a1 1 0 0 0 0-1.72l-13-7.5A1 1 0 0 0 6 4.5Z"/></symbol>
+  <symbol id="i-spotify" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.6 14.43a.62.62 0 0 1-.86.21c-2.35-1.44-5.3-1.76-8.79-.96a.62.62 0 1 1-.28-1.22c3.8-.87 7.07-.5 9.71 1.11.3.18.39.57.22.86Zm1.23-2.74a.78.78 0 0 1-1.07.26c-2.69-1.65-6.79-2.13-9.97-1.17a.78.78 0 1 1-.45-1.49c3.63-1.1 8.15-.56 11.24 1.33.37.23.49.71.25 1.07Zm.11-2.85C14.83 8.98 9.4 8.8 6.3 9.74a.94.94 0 1 1-.54-1.8c3.56-1.08 9.56-.87 13.33 1.37a.94.94 0 0 1-.96 1.61Z"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+  <symbol id="i-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.4-8 12-8 12s-8-7.6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+</svg>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="CrossFit TBB home">
+      <span class="mark">CrossFit&nbsp;<b>TBB</b></span>
+      <span class="sub">The Building Box · Belfast</span>
+    </a>
+    <nav id="primary-nav" class="nav-links" aria-label="Primary">
+      <a href="#top" class="active">Home</a>
+      <a href="#memberships">Memberships</a>
+      <a href="resource-hub.html">Resource Hub</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-primary" href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?purchasable=Pass-7870" target="_blank" rel="noopener">
+        <span class="btn-trial-label">Start your trial week</span>
+        <svg style="width:16px;height:16px"><use href="#i-arrow-right"></use></svg>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg class="nt-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+        <svg class="nt-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6 18 18M18 6 6 18"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="section" style="padding-top:clamp(28px,4vw,52px)">
+    <div class="wrap">
+
+      <!-- Variant A — editorial split -->
+      <div class="hero hero-a">
+        <div class="grid">
+          <div class="copy reveal">
+            <p class="kicker">Belfast · Est. The Building Box</p>
+            <h1 class="display h-xl">TRAIN WITH
+INTENT.</h1>
+            <p class="lede" style="margin-top: 26px; color: rgb(136, 136, 136)">Belfast's No.1 CrossFit space. Coach-led, community-driven training with in-house programming, a private recovery suite, and qualified instructors in every class.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?purchasable=Pass-7870" target="_blank" rel="noopener">Start your trial week<svg><use href="#i-arrow-right"></use></svg></a>
+              <a class="btn btn-ghost hero-link" href="#memberships">View memberships<svg style="width:15px;height:15px"><use href="#i-arrow-right"></use></svg></a>
+            </div>
+          </div>
+          <div class="visual reveal">
+            <image-slot id="hero-a-img" src="assets/ph-hero.png" shape="rounded" radius="12" placeholder="Drop a hero training photo"></image-slot>
+            <span class="tagpill">Owen O'Cork Mill · BT5</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Variant B — full-bleed cinematic -->
+      <div class="hero hero-b">
+        <div class="stage">
+          <image-slot id="hero-b-img" src="assets/ph-hero.png" shape="rect" placeholder="Drop a wide hero photo" style="position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:100vw;height:100%;border-radius:0;-webkit-mask-image:radial-gradient(125% 118% at 50% 42%,#000 52%,transparent 100%);mask-image:radial-gradient(125% 118% at 50% 42%,#000 52%,transparent 100%)"></image-slot>
+          <div class="scrim"></div>
+          <div class="wrap inner">
+            <p class="kicker no-rule" style="color:#fff">BELFAST'S PUREST CROSSFIT SPACE</p>
+            <h1 class="display h-xl" style="max-width:14ch">Stronger every session.</h1>
+            <p class="lede" style="margin-top:22px;max-width:46ch">Structured, coach-led CrossFit for every level — from your first class to the competition floor.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?purchasable=Pass-7870" target="_blank" rel="noopener">Start your trial week<svg><use href="#i-arrow-right"></use></svg></a>
+              <a class="btn btn-outline" href="#about" style="border-color:rgba(255,255,255,0.5);color:#fff">Why TBB</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="kicker">01 — About CrossFit TBB</p>
+        <h2 class="display h-md">A COACH-LED COMMUNITY BUILT FOR SERIOUS, SUSTAINABLE PROGRESS.</h2>
+      </div>
+      <div class="pillars reveal">
+        <div class="pillar">
+          <span class="ix">/ 01</span>
+          <h3>Real community</h3>
+          <p>A welcoming room where members push each other. You'll know names by your second week.</p>
+        </div>
+        <div class="pillar">
+          <span class="ix">/ 02</span>
+          <h3>Structured training</h3>
+          <p>In-house programming with a CrossFit-dominated schedule, so every session has a purpose.</p>
+        </div>
+        <div class="pillar">
+          <span class="ix">/ 03</span>
+          <h3>Expert coaching</h3>
+          <p>Qualified instructors lead every class with hands-on, interactive coaching — technique first, intensity second.</p>
+        </div>
+        <div class="pillar">
+          <span class="ix">/ 04</span>
+          <h3>Premium facilities</h3>
+          <p>Top-quality equipment, open-gym access and a private recovery suite — sauna, cold plunge and physio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OFFERINGS ============ -->
+  <section class="section" id="offers">
+    <div class="wrap">
+      <div class="section-head between reveal">
+        <div>
+          <p class="kicker">02 — What we offer</p>
+          <h2 class="display h-md" style="max-width:18ch">Programmes for every stage of your training.</h2>
+        </div>
+        <a class="btn btn-ghost" href="#memberships">See all memberships<svg style="width:16px;height:16px"><use href="#i-arrow-up-right"></use></svg></a>
+      </div>
+      <div class="offer-grid reveal">
+        <a class="offer" href="#memberships">
+          <span class="ic"><svg><use href="#i-dumbbell"></use></svg></span>
+          <h3>CrossFit classes</h3>
+          <p>Coach-led, varied daily workouts on an in-house programme. Scaled for every ability.</p>
+          <span class="more">Explore<svg><use href="#i-arrow-right"></use></svg></span>
+        </a>
+        <a class="offer" href="#memberships">
+          <span class="ic"><svg><use href="#i-warehouse"></use></svg></span>
+          <h3>Open gym</h3>
+          <p>Train on your own schedule with full access to top-quality equipment and floor space.</p>
+          <span class="more">Explore<svg><use href="#i-arrow-right"></use></svg></span>
+        </a>
+        <a class="offer" href="#memberships">
+          <span class="ic"><svg><use href="#i-trophy"></use></svg></span>
+          <h3>Competitor training</h3>
+          <p>Focused programming and coaching for members chasing the competition floor.</p>
+          <span class="more">Explore<svg><use href="#i-arrow-right"></use></svg></span>
+        </a>
+        <a class="offer full" href="#recovery">
+          <span class="ic"><svg><use href="#i-waves"></use></svg></span>
+          <h3>Recovery services</h3>
+          <p>A private recovery suite with a infrared sauna, cold plunge, and in-house physio &amp; massage — recover as seriously as you train.</p>
+          <span class="more">View recovery<svg><use href="#i-arrow-right"></use></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MEMBERSHIPS ============ -->
+  <section class="section" id="memberships">
+    <div class="wrap">
+      <div class="section-head between reveal">
+        <div>
+          <p class="kicker">03 — Memberships</p>
+          <h2 class="display h-md" style="max-width:16ch">Simple plans. Serious training.</h2>
+        </div>
+        <p class="lede" style="max-width:34ch">All sign-ups run through WodBoard.</p>
+      </div>
+
+      <!-- Variant: cards -->
+      <div class="mem-cards reveal">
+        <div class="plan-grid">
+          <div class="plan">
+            <span class="pname">3 Class Pass</span>
+            <div class="price"><span class="amt">£40</span><span class="per">one-off</span></div>
+            <p class="note">Drop in or test the waters.</p>
+            <ul>
+              <li><svg><use href="#i-check"></use></svg> 3 sessions to use as you like</li>
+              <li><svg><use href="#i-check"></use></svg> CrossFit, CX or Team classes</li>
+              <li><svg><use href="#i-check"></use></svg> Coach-led, fully scaled</li>
+              <li><svg><use href="#i-check"></use></svg> Valid for 2 weeks</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?purchasable=Pass-5214" target="_blank" rel="noopener">Buy pass</a>
+          </div>
+          <div class="plan plan-pop">
+            <span class="pname">Affiliate</span>
+            <div class="price"><span class="amt">£95</span><span class="per">/&thinsp;month</span></div>
+            <p class="note">Everything, every day.</p>
+            <ul>
+              <li><svg><use href="#i-check"></use></svg> Unlimited classes</li>
+              <li>Unlimited open gym access</li>
+              <li><svg><use href="#i-check"></use></svg> Recovery box — sauna &amp; cold plunge</li>
+              <li><svg><use href="#i-check"></use></svg> In-house programming</li>
+              <li><svg><use href="#i-check"></use></svg> Ongoing · 90-day minimum term</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?purchasable=Plan-13668" target="_blank" rel="noopener">Join now</a>
+          </div>
+          <div class="plan">
+            <span class="pname">Foundation</span>
+            <div class="price"><span class="amt">£50</span><span class="per">/&thinsp;4 weeks</span></div>
+            <p class="note">Ease in at your own pace.</p>
+            <ul>
+              <li><svg><use href="#i-check"></use></svg> Unlimited open gym</li>
+              <li><svg><use href="#i-check"></use></svg> 2 classes per week</li>
+              <li><svg><use href="#i-check"></use></svg> CrossFit, CX or Team classes</li>
+              <li><svg><use href="#i-check"></use></svg> Rolling — no minimum term</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?code=b31989c8e800d9c3&purchasable=Plan-10181" target="_blank" rel="noopener">Join now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Variant: comparison table -->
+      <div class="mem-table reveal">
+        <div class="mtable-scroll">
+          <table class="mtable">
+            <thead>
+              <tr>
+                <th class="plan-col"><span class="row-label">Compare plans</span></th>
+                <th class="plan-col"><div class="plan-name">3 Class Pass</div><div class="plan-price">£40 · one-off</div></th>
+                <th class="plan-col featured-col"><div class="plan-name">Affiliate</div><div class="plan-price">£95 / month</div></th>
+                <th class="plan-col"><div class="plan-name">Foundation</div><div class="plan-price">£50 / 4 weeks</div></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="feat">CrossFit, CX &amp; Team classes</td><td class="center"><svg><use href="#i-check"></use></svg></td><td class="center"><svg><use href="#i-check"></use></svg></td><td class="center"><svg><use href="#i-check"></use></svg></td></tr>
+              <tr><td class="feat">Unlimited classes</td><td class="center"><span class="dash">—</span></td><td class="center"><svg><use href="#i-check"></use></svg></td><td class="center"><span class="dash">2 / week</span></td></tr>
+              <tr><td class="feat">Open gym access</td><td class="center"><span class="dash">—</span></td><td class="center"><svg><use href="#i-check"></use></svg></td><td class="center"><svg><use href="#i-check"></use></svg></td></tr>
+              <tr><td class="feat">Recovery box (sauna · ice · physio)</td><td class="center"><span class="dash">—</span></td><td class="center"><svg><use href="#i-check"></use></svg></td><td class="center"><span class="dash">—</span></td></tr>
+              <tr><td class="feat">Rolling membership</td><td class="center"><span class="dash">—</span></td><td class="center"><svg><use href="#i-check"></use></svg></td><td class="center"><svg><use href="#i-check"></use></svg></td></tr>
+              <tr><td class="feat">No minimum term</td><td class="center"><svg><use href="#i-check"></use></svg></td><td class="center"><span class="dash">90 days</span></td><td class="center"><svg><use href="#i-check"></use></svg></td></tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><a class="btn btn-outline btn-block" href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?purchasable=Pass-5214" target="_blank" rel="noopener">Buy pass</a></td>
+                <td><a class="btn btn-primary btn-block" href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?purchasable=Plan-13668" target="_blank" rel="noopener">Join now</a></td>
+                <td><a class="btn btn-outline btn-block" href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?code=b31989c8e800d9c3&purchasable=Plan-10181" target="_blank" rel="noopener">Join</a></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <!-- Membership FAQ -->
+      <div class="mem-faq reveal" id="faq">
+        <div class="qa"><h4>Do I need to be fit before I start?</h4><p>No. Every class is scaled to you, and a £1 trial week is the easiest way to find your feet.</p></div>
+        <div class="qa"><h4>How do memberships work?</h4><p>Choose unlimited Affiliate, a rolling 4-weekly Foundation plan, or a one-off class pass. All sign-ups run through WodBoard.</p></div>
+        <div class="qa"><h4>What should I bring to class?</h4><p>Trainers, comfortable kit, and a water bottle. Everything else — equipment and recovery — is here.</p></div>
+        <div class="qa"><h4>Can I just try it first?</h4><p>Yes — start with a trial week. £1, no commitment, just turn up and train.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECOVERY FEATURE ============ -->
+  <section class="section" id="recovery">
+    <div class="wrap">
+      <div class="feature">
+        <div class="copy reveal">
+          <p class="kicker">04 — Premium recovery</p>
+          <h2 class="display h-md">Recover like the work matters.</h2>
+          <p class="lede" style="margin-top:20px">Training is only half of it. Our private recovery suite is built to bring you back stronger for the next session.</p>
+          <ul>
+            <li><span class="dot"><svg><use href="#i-check"></use></svg></span> Infrared sauna</li>
+            <li><span class="dot"><svg><use href="#i-check"></use></svg></span> Cold plunge</li>
+            <li><span class="dot"><svg><use href="#i-check"></use></svg></span> On-site physio &amp; masseuse</li>
+            <li><span class="dot"><svg><use href="#i-check"></use></svg></span> Private sessions</li>
+            <li><span class="dot"><svg><use href="#i-check"></use></svg></span> Showers &amp; changing facilities</li>
+          </ul>
+          <div class="hero-cta" style="margin-top:32px">
+            <a class="btn btn-primary" href="https://www.wodboard.com/locations/558/drop_ins/9e8fd72a28?class_type=10574" target="_blank" rel="noopener">Book a recovery session<svg><use href="#i-arrow-right"></use></svg></a>
+          </div>
+        </div>
+        <div class="visual reveal">
+          <image-slot id="recovery-img" src="assets/ph-recovery.png" radius="12" placeholder="Drop a recovery-suite photo"></image-slot>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STORIES ============ -->
+  <section class="section" id="stories">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="kicker">05 — Member stories</p>
+        <h2 class="display h-md">Results you can feel — and a room that has your back.</h2>
+      </div>
+      <div class="story-grid reveal">
+        <div class="story lead">
+          <div>
+            <div class="stars" aria-label="5 out of 5">
+              <svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg>
+            </div>
+            <p class="quote">"I walked in having never touched a barbell. Six months later I'm fitter than I've ever been — and it's the coaching that did it. They meet you exactly where you are."</p>
+          </div>
+          <div class="who">
+            <image-slot id="story-1-av" src="assets/ph-avatar.png" shape="circle" placeholder="Photo"></image-slot>
+            <div><div class="nm">Rachel M.</div><div class="mt">Member · 1 year</div></div>
+          </div>
+        </div>
+        <div class="story">
+          <div class="stars" aria-label="5 out of 5"><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg></div>
+          <p class="quote">"Best community in Belfast. The recovery room is a game-changer after a heavy week."</p>
+          <div class="who">
+            <image-slot id="story-2-av" src="assets/ph-avatar.png" shape="circle" placeholder="Photo"></image-slot>
+            <div><div class="nm">Conor D.</div><div class="mt">Member · 2 years</div></div>
+          </div>
+        </div>
+        <div class="story">
+          <div class="stars" aria-label="5 out of 5"><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg></div>
+          <p class="quote">"The trial week made starting completely painless. I never felt out of place."</p>
+          <div class="who">
+            <image-slot id="story-3-av" src="assets/ph-avatar.png" shape="circle" placeholder="Photo"></image-slot>
+            <div><div class="nm">Aoife K.</div><div class="mt">Member · 8 months</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LATEST CONTENT ============ -->
+  <section class="section" id="content">
+    <div class="wrap">
+      <div class="section-head between reveal">
+        <div>
+          <p class="kicker">06 — Resource hub</p>
+          <h2 class="display h-md" style="max-width:16ch">Latest from the box.</h2>
+        </div>
+        <a class="btn btn-ghost" href="resource-hub.html">Visit the resource hub<svg style="width:16px;height:16px"><use href="#i-arrow-up-right"></use></svg></a>
+      </div>
+      <div class="post-list reveal">
+        <a class="post" href="article.html?slug=scale-workout">
+          <image-slot id="post-1" src="assets/covers/training.png" placeholder="Cover"></image-slot>
+          <div><span class="cat">Training</span><h3>How to scale a workout without losing the stimulus</h3></div>
+          <span class="date">May 28</span>
+        </a>
+        <a class="post" href="article.html?slug=fuelling-busy-weeks">
+          <image-slot id="post-2" src="assets/covers/nutrition.png" placeholder="Cover"></image-slot>
+          <div><span class="cat">Nutrition</span><h3>Fuelling for CrossFit: a simple framework for busy weeks</h3></div>
+          <span class="date">May 14</span>
+        </a>
+        <a class="post" href="article.html?slug=first-month">
+          <image-slot id="post-3" src="assets/covers/beginners.png" placeholder="Cover"></image-slot>
+          <div><span class="cat">Beginners</span><h3>Your first month at TBB: what to expect, week by week</h3></div>
+          <span class="date">Apr 30</span>
+        </a>
+        <a class="post" href="article.html?slug=offseason-base">
+          <image-slot id="post-4" src="assets/covers/competition.png" placeholder="Cover"></image-slot>
+          <div><span class="cat">Competition</span><h3>Off-season programming: building a base that lasts</h3></div>
+          <span class="date">Apr 18</span>
+        </a>
+        <a class="post" href="https://open.spotify.com/show/7jnRQ30E4Yz9mEwXxY8f49?si=79e448d635ac4957" target="_blank" rel="noopener">
+          <image-slot id="pod-1" src="assets/covers/podcast.png" placeholder="Cover"></image-slot>
+          <div><span class="cat">Podcast</span><h3>Ep. 12 — Building a beginner's mindset</h3></div>
+          <span class="date">42 min</span>
+        </a>
+        <a class="post" href="https://open.spotify.com/show/7jnRQ30E4Yz9mEwXxY8f49?si=79e448d635ac4957" target="_blank" rel="noopener">
+          <image-slot id="pod-2" src="assets/covers/podcast.png" placeholder="Cover"></image-slot>
+          <div><span class="cat">Podcast</span><h3>Ep. 11 — Recovery that actually works</h3></div>
+          <span class="date">38 min</span>
+        </a>
+        <a class="post" href="https://open.spotify.com/show/7jnRQ30E4Yz9mEwXxY8f49?si=79e448d635ac4957" target="_blank" rel="noopener">
+          <image-slot id="pod-3" src="assets/covers/podcast.png" placeholder="Cover"></image-slot>
+          <div><span class="cat">Podcast</span><h3>Ep. 10 — Inside our in-house programming</h3></div>
+          <span class="date">51 min</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FIRST-CLASS CTA BAND ============ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="cta reveal">
+        <span class="watermark" aria-hidden="true">TBB</span>
+        <p class="kicker no-rule">Your first class is free</p>
+        <h2 class="display h-lg" style="max-width:15ch">Come and find out what you're capable of.</h2>
+        <p class="lede" style="margin-top:22px;max-width:52ch">Coach-led CrossFit for every level, in East Belfast. Start with a £1 trial week — no experience needed, no pressure, just good training.</p>
+        <div class="cta-row">
+          <a class="btn btn-light" href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?purchasable=Pass-7870" target="_blank" rel="noopener">START YOUR TRIAL WEEK</a>
+          <a class="btn btn-clear" href="#memberships">View memberships</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="#top" aria-label="CrossFit TBB home"><span class="mark">CrossFit&nbsp;<b>TBB</b></span></a>
+        <p class="fdesc">Belfast's purest CrossFit space. Coach-led training, real community, premium recovery.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/crossfit_tbb" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-instagram"></use></svg></a>
+          <a href="https://www.facebook.com/thebuildingboxbelfast/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-facebook"></use></svg></a>
+          <a href="https://www.linkedin.com/company/crossfit-tbb" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"></use></svg></a>
+          <a href="https://linktr.ee/thebuildingbox" target="_blank" rel="noopener" aria-label="Linktree"><svg><use href="#i-link"></use></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#memberships">Memberships</a></li>
+          <li><a href="#content">Resource Hub</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get going</h5>
+        <ul>
+          <li><a href="https://www.wodboard.com/locations/558/signup/9e8fd72a28?purchasable=Pass-7870" target="_blank" rel="noopener">£1 trial week</a></li>
+          <li><a href="https://www.wodboard.com/locations/558/timetable/630d60eebe" target="_blank" rel="noopener">Timetable</a></li>
+          <li><a href="https://tr.ee/fl_O3_2IQK" target="_blank" rel="noopener">Book a drop-in</a></li>
+          <li><a href="https://www.crossfit.com/gym/32712/crossfit-tbb" target="_blank" rel="noopener">Find us on CrossFit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <address class="addr">
+          Unit 7, Owen O'Cork Mill<br>
+          288 Beersbridge Rd<br>
+          Belfast · BT5 5DX<br><br>
+          <a href="mailto:info@thebuildingbox.co.uk">info@thebuildingbox.co.uk</a>
+        </address>
+        <div class="socials" style="margin-top:14px">
+          <a href="https://maps.app.goo.gl/sNJASzzKWYYU76YG9" target="_blank" rel="noopener" aria-label="Find us on Google Maps"><svg><use href="#i-map-pin"></use></svg></a>
+          <a href="https://www.wodboard.com/locations/558/timetable/630d60eebe" target="_blank" rel="noopener" aria-label="Opening hours and timetable"><svg><use href="#i-clock"></use></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 CrossFit TBB · The Building Box</p>
+      <p>Owen O'Cork Mill, Belfast BT5 5DX</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="image-slot.js"></script>
+<script src="nav.js"></script>
+
+</body>
+</html>

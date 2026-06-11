@@ -1,0 +1,13 @@
+/* Fonts.
+   Obsidian uses the OS system font stack for UI + editor text (see typography.css),
+   so there is intentionally NO custom UI/body webfont here — that nativeness is a
+   brand value, not an omission.
+
+   The one webfont is the monospace face used for Markdown source / code blocks.
+   Obsidian ships with Fira Mono and recommends Fira Code; users frequently install
+   Fira Code themselves. We load Fira Code from Google Fonts as the documented default.
+
+   SUBSTITUTION FLAG: this is the Google Fonts build of Fira Code, not a vendored
+   binary. If you need fully offline/self-hosted fonts, drop the .woff2 files in
+   assets/fonts/ and replace this @import with local @font-face rules. */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
