@@ -29,6 +29,44 @@ logo_url: https://crossfit-tbb.co.uk/assets/apple-touch-icon.png
 
 # Sentence-case everything in the editor, to match the site's voice.
 collections:
+  - name: homepage
+    label: Homepage & media
+    description: Swap the homepage photos and the cinematic hero video. Leave any field empty to keep the current placeholder.
+    files:
+      - name: site
+        label: Homepage media
+        file: content/site.json
+        description: Upload your own gym photos and hero video. Changes go live a minute after you publish.
+        fields:
+          - name: hero_video
+            label: Hero background video
+            widget: file
+            required: false
+            media_library: { config: { max_file_size: 15728640 } }
+            hint: Optional. A short, wide clip (MP4, ideally under ~10 MB) that plays muted behind the homepage headline. Leave empty to use the hero photo instead.
+          - name: hero_image
+            label: Hero photo (and video fallback)
+            widget: image
+            required: false
+            hint: The main homepage photo. Also shown while the video loads, or if a visitor's browser blocks autoplay.
+          - name: recovery_image
+            label: Recovery suite photo
+            widget: image
+            required: false
+            hint: Photo for the "Premium recovery" section (sauna · cold plunge · physio).
+          - name: member1_photo
+            label: Member story photo — Rachel M.
+            widget: image
+            required: false
+          - name: member2_photo
+            label: Member story photo — Conor D.
+            widget: image
+            required: false
+          - name: member3_photo
+            label: Member story photo — Aoife K.
+            widget: image
+            required: false
+
   - name: content
     label: Resource Hub
     description: Add, edit, reorder and delete the articles that appear on the Resource Hub.
