@@ -58,13 +58,13 @@
       </div>
 
       <header class="art-head">
-        <span class="ah-cat" id="art-cat">Training</span>
-        <h1 id="art-title">How to scale a workout without losing the stimulus</h1>
+        <span class="ah-cat" id="art-cat"></span>
+        <h1 id="art-title">Loading…</h1>
         <div class="art-byline">
           <image-slot id="art-author-av" shape="circle" placeholder="Photo"></image-slot>
           <div class="who">
-            <div class="nm" id="art-author">Coach Jamie</div>
-            <div class="meta" id="art-meta">Head Coach · 28 May 2026 · 6 min read</div>
+            <div class="nm" id="art-author"></div>
+            <div class="meta" id="art-meta"></div>
           </div>
           <div class="share" id="art-share-top" aria-label="Share this article">
             <a id="sh-x-top" href="#" target="_blank" rel="noopener" aria-label="Share on X"><svg><use href="#i-x-twitter"></use></svg></a>
@@ -90,35 +90,13 @@
         <button id="sh-copy-foot" type="button" aria-label="Copy link"><svg><use href="#i-link"></use></svg></button>
       </div>
 
-      <!-- Comments -->
-      <section class="comments">
-        <h2>Comments <span class="cc-count" id="cc-count">(2)</span></h2>
-        <form class="comment-form" id="comment-form">
-          <div class="row">
-            <input type="text" id="cf-name" placeholder="Your name" aria-label="Your name" required>
-          </div>
-          <textarea id="cf-text" placeholder="Add to the discussion…" aria-label="Your comment" required></textarea>
-          <div class="cf-actions">
-            <button class="btn btn-primary" type="submit">Post comment<svg><use href="#i-send"></use></svg></button>
-          </div>
-        </form>
-        <div class="comment-list" id="comment-list">
-          <div class="comment">
-            <div class="av">M</div>
-            <div class="cbody">
-              <div class="chead"><span class="nm">Mark T.</span><span class="when">2 days ago</span></div>
-              <p class="ctext">This finally made scaling click for me. I've been dropping weight on everything when half the time it's the volume I should be cutting.</p>
-            </div>
-          </div>
-          <div class="comment">
-            <div class="av">L</div>
-            <div class="cbody">
-              <div class="chead"><span class="nm">Léa R.</span><span class="when">5 days ago</span></div>
-              <p class="ctext">The "start with the intent" line is going to live in my head now. Great read, coach.</p>
-            </div>
-          </div>
-        </div>
+      <!-- Comments (Google sign-in via Firebase — real, persistent, free, no ads) -->
+      <section class="comments" id="comments" hidden>
+        <h2>Comments <span class="cc-count" id="cc-count"></span></h2>
+        <div id="comment-auth"></div>
+        <div class="comment-list" id="comment-list"></div>
       </section>
+
     </div>
   </article>
 
@@ -197,6 +175,7 @@
   })();
 </script>
 <script src="article.js"></script>
+<script src="comments.js"></script>
 
 </body>
 </html>

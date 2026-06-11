@@ -16,8 +16,14 @@
   if (post && post.type === 'podcast') { location.replace('resource-hub.html#podcast'); return; }
 
   if (!post) {
+    document.title = 'Article not found — CrossFit TBB';
+    var nf;
+    nf = document.getElementById('art-cat'); if (nf) nf.textContent = '';
+    nf = document.getElementById('art-title'); if (nf) nf.textContent = 'Article not found';
+    nf = document.querySelector('.art-byline'); if (nf) nf.style.display = 'none';
+    nf = document.querySelector('.art-hero'); if (nf) nf.style.display = 'none';
     var body = document.getElementById('art-body');
-    if (body) body.innerHTML = '<p>This article could not be found. <a href="resource-hub.html">Back to the Resource Hub</a>.</p>';
+    if (body) body.innerHTML = '<p>This article could not be found, or hasn\'t been published yet. <a href="resource-hub.html">Back to the Resource Hub</a>.</p>';
     return;
   }
 
@@ -107,30 +113,7 @@
   wireCopy('sh-copy-top');
   wireCopy('sh-copy-foot');
 
-  // ---- Comments (client-side only, resets on reload) ----
-  var form = document.getElementById('comment-form');
-  var list = document.getElementById('comment-list');
-  var countEl = document.getElementById('cc-count');
-  function refreshCount() { if (countEl && list) countEl.textContent = '(' + list.querySelectorAll('.comment').length + ')'; }
-  if (form && list) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var name = document.getElementById('cf-name').value.trim();
-      var text = document.getElementById('cf-text').value.trim();
-      if (!name || !text) return;
-      var c = document.createElement('div');
-      c.className = 'comment';
-      c.innerHTML =
-        '<div class="av"></div>' +
-        '<div class="cbody"><div class="chead"><span class="nm"></span>' +
-        '<span class="when">just now</span></div><p class="ctext"></p></div>';
-      c.querySelector('.av').textContent = name.charAt(0).toUpperCase();
-      c.querySelector('.nm').textContent = name;
-      c.querySelector('.ctext').textContent = text;
-      list.insertBefore(c, list.firstChild);
-      form.reset();
-      refreshCount();
-    });
-  }
+  // Comments are handled by Giscus (comments.js) — real, persistent threads
+  // backed by GitHub Discussions. No client-side comment code lives here.
   });
 })();

@@ -23,12 +23,12 @@
   function applyHeroVideo(url, poster) {
     var vid = document.getElementById('hero-video');
     if (!vid || !url) return;
+    // Tolerate a path saved with or without a leading slash.
+    if (!/^https?:|^\//.test(url)) url = '/' + url.replace(/^\.?\//, '');
     if (poster) vid.setAttribute('poster', poster);
-    // Build a <source> so the browser can pick the format.
-    var src = document.createElement('source');
-    src.src = url;
-    src.type = url.toLowerCase().endsWith('.webm') ? 'video/webm' : 'video/mp4';
-    vid.appendChild(src);
+    // Set the source directly so the browser sniffs the real format
+    // (handles .mp4 / .webm / .mov without us guessing a MIME type).
+    vid.setAttribute('src', url);
     vid.load();
     // Reveal the video layer over the still image and start it.
     vid.hidden = false;

@@ -403,43 +403,8 @@ INTENT.</h1>
         </div>
         <a class="btn btn-ghost" href="resource-hub.html">Visit the resource hub<svg style="width:16px;height:16px"><use href="#i-arrow-up-right"></use></svg></a>
       </div>
-      <div class="post-list reveal">
-        <a class="post" href="article.html?slug=scale-workout">
-          <image-slot id="post-1" src="assets/covers/training.png" placeholder="Cover"></image-slot>
-          <div><span class="cat">Training</span><h3>How to scale a workout without losing the stimulus</h3></div>
-          <span class="date">May 28</span>
-        </a>
-        <a class="post" href="article.html?slug=fuelling-busy-weeks">
-          <image-slot id="post-2" src="assets/covers/nutrition.png" placeholder="Cover"></image-slot>
-          <div><span class="cat">Nutrition</span><h3>Fuelling for CrossFit: a simple framework for busy weeks</h3></div>
-          <span class="date">May 14</span>
-        </a>
-        <a class="post" href="article.html?slug=first-month">
-          <image-slot id="post-3" src="assets/covers/beginners.png" placeholder="Cover"></image-slot>
-          <div><span class="cat">Beginners</span><h3>Your first month at TBB: what to expect, week by week</h3></div>
-          <span class="date">Apr 30</span>
-        </a>
-        <a class="post" href="article.html?slug=offseason-base">
-          <image-slot id="post-4" src="assets/covers/competition.png" placeholder="Cover"></image-slot>
-          <div><span class="cat">Competition</span><h3>Off-season programming: building a base that lasts</h3></div>
-          <span class="date">Apr 18</span>
-        </a>
-        <a class="post" href="https://open.spotify.com/show/7jnRQ30E4Yz9mEwXxY8f49?si=79e448d635ac4957" target="_blank" rel="noopener">
-          <image-slot id="pod-1" src="assets/covers/podcast.png" placeholder="Cover"></image-slot>
-          <div><span class="cat">Podcast</span><h3>Ep. 12 — Building a beginner's mindset</h3></div>
-          <span class="date">42 min</span>
-        </a>
-        <a class="post" href="https://open.spotify.com/show/7jnRQ30E4Yz9mEwXxY8f49?si=79e448d635ac4957" target="_blank" rel="noopener">
-          <image-slot id="pod-2" src="assets/covers/podcast.png" placeholder="Cover"></image-slot>
-          <div><span class="cat">Podcast</span><h3>Ep. 11 — Recovery that actually works</h3></div>
-          <span class="date">38 min</span>
-        </a>
-        <a class="post" href="https://open.spotify.com/show/7jnRQ30E4Yz9mEwXxY8f49?si=79e448d635ac4957" target="_blank" rel="noopener">
-          <image-slot id="pod-3" src="assets/covers/podcast.png" placeholder="Cover"></image-slot>
-          <div><span class="cat">Podcast</span><h3>Ep. 10 — Inside our in-house programming</h3></div>
-          <span class="date">51 min</span>
-        </a>
-      </div>
+      <div class="post-list reveal" id="home-latest"></div>
+      <p class="home-latest-empty" id="home-latest-empty" hidden>New articles from the coaches are on the way — check back soon.</p>
     </div>
   </section>
 
@@ -517,6 +482,9 @@ INTENT.</h1>
 <!-- ============ SCRIPTS ============ -->
 <script src="image-slot.js"></script>
 <script src="nav.js"></script>
+<script src="posts.js"></script>
+<script src="store.js"></script>
+<script src="home.js"></script>
 <script src="site-media.js"></script>
 
 </body>
