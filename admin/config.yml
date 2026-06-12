@@ -31,13 +31,28 @@ logo_url: https://crossfit-tbb.co.uk/assets/apple-touch-icon.png
 collections:
   - name: homepage
     label: Homepage & media
-    description: Swap the homepage photos and the cinematic hero video. Leave any field empty to keep the current placeholder.
+    description: Edit the homepage headline copy, and swap the photos and cinematic hero video. Leave any field empty to keep what's currently on the site.
     files:
       - name: site
-        label: Homepage media
+        label: Homepage copy & media
         file: content/site.json
-        description: Upload your own gym photos and hero video. Changes go live a minute after you publish.
+        description: Headline copy plus your own gym photos and hero video. Changes go live a minute after you publish.
         fields:
+          - name: hero_kicker
+            label: "Hero — small line above the headline"
+            widget: string
+            required: false
+            hint: "e.g. BELFAST'S PUREST CROSSFIT SPACE. Leave empty to keep the current line."
+          - name: hero_headline
+            label: "Hero — main headline"
+            widget: string
+            required: false
+            hint: "e.g. Stronger every session. Keep it short — two to four words reads best."
+          - name: hero_lede
+            label: "Hero — supporting sentence"
+            widget: text
+            required: false
+            hint: "e.g. Structured, coach-led CrossFit for every level — from your first class to the competition floor."
           - name: hero_video
             label: Hero background video
             widget: file
@@ -66,6 +81,121 @@ collections:
             label: Member story photo — Aoife K.
             widget: image
             required: false
+
+      - name: copy
+        label: Homepage copy
+        file: content/copy.json
+        description: The main wording on the homepage, section by section. Edit and publish — changes go live a minute later.
+        fields:
+          - name: about
+            label: "Section 01 — About"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: heading, label: Section heading, widget: text }
+              - name: pillar1
+                label: "Pillar 1"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: pillar2
+                label: "Pillar 2"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: pillar3
+                label: "Pillar 3"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: pillar4
+                label: "Pillar 4"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+          - name: offers
+            label: "Section 02 — What we offer"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: heading, label: Section heading, widget: text }
+              - name: card1
+                label: "Card 1 — CrossFit classes"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: card2
+                label: "Card 2 — Open gym"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: card3
+                label: "Card 3 — Competitor training"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: card4
+                label: "Card 4 — Recovery services (wide card)"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+          - name: faq
+            label: "Section 03 — Membership FAQ"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: q1, label: "Question 1", widget: string }
+              - { name: a1, label: "Answer 1", widget: text }
+              - { name: q2, label: "Question 2", widget: string }
+              - { name: a2, label: "Answer 2", widget: text }
+              - { name: q3, label: "Question 3", widget: string }
+              - { name: a3, label: "Answer 3", widget: text }
+              - { name: q4, label: "Question 4", widget: string }
+              - { name: a4, label: "Answer 4", widget: text }
+          - name: stories
+            label: "Section 05 — Member stories"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: heading, label: Section heading, widget: text }
+              - name: story1
+                label: "Story 1 (large card)"
+                widget: object
+                fields:
+                  - { name: quote, label: Quote, widget: text, hint: "Include the quotation marks." }
+                  - { name: name, label: Member name, widget: string }
+                  - { name: meta, label: "Detail line (e.g. Member · 1 year)", widget: string }
+              - name: story2
+                label: "Story 2"
+                widget: object
+                fields:
+                  - { name: quote, label: Quote, widget: text, hint: "Include the quotation marks." }
+                  - { name: name, label: Member name, widget: string }
+                  - { name: meta, label: "Detail line", widget: string }
+              - name: story3
+                label: "Story 3"
+                widget: object
+                fields:
+                  - { name: quote, label: Quote, widget: text, hint: "Include the quotation marks." }
+                  - { name: name, label: Member name, widget: string }
+                  - { name: meta, label: "Detail line", widget: string }
+          - name: cta
+            label: "Bottom call-to-action band"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: kicker, label: Small line above the headline, widget: string }
+              - { name: headline, label: Headline, widget: string }
+              - { name: lede, label: Supporting sentence, widget: text }
+              - { name: button, label: Button label, widget: string }
 
   - name: content
     label: Resource Hub

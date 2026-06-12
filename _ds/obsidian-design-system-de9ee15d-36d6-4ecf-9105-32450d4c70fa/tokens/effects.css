@@ -1,0 +1,28 @@
+/* Shadows, motion, and focus — tuned for a dark canvas.
+   Elevation reads through deeper, higher-opacity shadows (no light to catch). */
+:root {
+  /* ---- Shadows ---- */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-elevated: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-modal: 0 8px 32px rgba(0, 0, 0, 0.6);
+
+  /* ---- Motion ---- */
+  /* hovers, link previews, micro-feedback */
+  --duration-fast: 80ms;     /* @kind other */
+  /* panel reveals, palette open */
+  --duration-base: 150ms;    /* @kind other */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);  /* @kind other */
+
+  /* ---- Focus ring ---- */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --focus-ring-color: var(--color-focus);   /* #9580FF — 5.3:1 on canvas */
+}
+
+/* Honor reduced motion globally — Obsidian suppresses transitions for these users. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;  /* @kind other */
+    --duration-base: 0ms;  /* @kind other */
+  }
+}

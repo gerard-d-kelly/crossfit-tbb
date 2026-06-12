@@ -1,0 +1,39 @@
+/* Typography — system font stack for UI + editor (native feel), Fira Code for source.
+   Body reads at a generous 16px / 1.7 for long writing sessions. */
+:root {
+  /* ---- Families ---- */
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-text: var(--font-ui);   /* editor body — Obsidian uses the same stack */
+  --font-mono: "Fira Code", "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  /* ---- Weights ---- */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ---- Editor heading scale (H1–H6) ---- */
+  --text-h1: 28px;
+  --text-h2: 24px;
+  --text-h3: 20px;
+  --text-h4: 18px;
+  --text-h5: 16px;
+  --text-h6: 14px;
+
+  /* ---- Roles ---- */
+  --text-display: 32px;          /* settings titles, empty-state headlines */
+  --text-body-size: 16px;        /* body copy size (the --text-body alias is a COLOR, see colors.css) */
+  --text-ui: 13px;               /* chrome: file tree, tabs, status bar */
+  --text-ui-sm: 12px;            /* badges, counts, tooltips */
+  --text-code: 14px;             /* code blocks + Markdown source */
+
+  /* ---- Line heights ---- */
+  --leading-display: 1.2;
+  --leading-body: 1.7;
+  --leading-ui: 1.4;
+  --leading-code: 1.5;
+
+  /* ---- Tracking ---- */
+  --tracking-display: -0.01em;
+  --tracking-body: 0;
+}
