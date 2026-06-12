@@ -1,0 +1,55 @@
+/* Colors — Obsidian dark-first palette.
+   Base ramp = raw values. Semantic aliases below map intent -> ramp. */
+:root {
+  /* ---- Brand / accent ---- */
+  --ob-purple: #7C3AED;          /* primary accent: active nodes, selected states, tags */
+  --ob-purple-hover: #6D28D9;    /* primary pressed/hover */
+  --ob-link: #9580FF;            /* [[WikiLinks]] + inline links — the key interactive ink */
+  --ob-link-hover: #B4A0FF;      /* link hover */
+  --ob-on-primary: #ffffff;      /* text/icon on a filled purple surface */
+
+  /* ---- Neutrals / surfaces (dark) ---- */
+  --ob-canvas: #202020;          /* app background — native default, deep */
+  --ob-surface-1: #2A2A2A;       /* sidebars, cards */
+  --ob-surface-2: #303030;       /* modals, command palette, popovers, hover rows */
+  --ob-border: #3D3D3D;          /* dividers, input borders, tab seams */
+
+  /* ---- Ink ---- */
+  --ob-ink: #DCDCDC;             /* body text — soft white, not #fff, for long sessions */
+  --ob-ink-muted: #888888;       /* secondary text, metadata, placeholders (AA at 4.6:1) */
+
+  /* ---- Graph view ---- */
+  --ob-graph-node: #7C3AED;      /* a linked note */
+  --ob-graph-edge: #444444;      /* connection between notes (decorative) */
+  --ob-graph-orphan: #E0524F;    /* orphan note — no links in or out */
+
+  /* ---- In-note furniture ---- */
+  --ob-tag: #7C3AED;             /* #tag pills */
+  --ob-callout-bg: #1E1E2E;      /* callout / admonition block background */
+  --ob-code-bg: #2A2A2A;         /* inline code + code block background */
+
+  /* ---- Callout accents (semantic admonitions) ---- */
+  --ob-info: #9580FF;
+  --ob-success: #54B581;
+  --ob-warning: #E0B341;
+  --ob-danger: #E0524F;
+
+  /* =========================================================
+     SEMANTIC ALIASES — prefer these in UI; they read by intent.
+     ========================================================= */
+  --color-bg: var(--ob-canvas);
+  --surface-1: var(--ob-surface-1);
+  --surface-2: var(--ob-surface-2);
+  --color-border: var(--ob-border);
+
+  --text-body: var(--ob-ink);
+  --text-muted: var(--ob-ink-muted);
+  --text-link: var(--ob-link);
+  --text-link-hover: var(--ob-link-hover);
+
+  --color-primary: var(--ob-purple);
+  --color-primary-hover: var(--ob-purple-hover);
+  --color-on-primary: var(--ob-on-primary);
+
+  --color-focus: var(--ob-link);   /* 2px outline, 2px offset — see effects.css */
+}

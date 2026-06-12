@@ -1,0 +1,25 @@
+/* Spacing, radius, and layout constants.
+   8px base; scale = 4 8 12 16 24 32 48 64. */
+:root {
+  /* ---- Spacing scale ---- */
+  --space-1: 4px;
+  --space-2: 8px;    /* base unit */
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* ---- Radius ---- */
+  --radius-sm: 4px;    /* inputs, tags, small buttons */
+  --radius-md: 8px;    /* cards, buttons, popovers */
+  --radius-lg: 12px;   /* modals, command palette */
+  --radius-pill: 9999px;
+
+  /* ---- Layout constants (Obsidian chrome) ---- */
+  --layout-sidebar: 260px;        /* default sidebar width, resizable */
+  --layout-content-max: 700px;    /* centered editor content measure */
+  --layout-tab-height: 32px;      /* editor tab strip */
+  --layout-row-height: 28px;      /* file-tree row */
+}
