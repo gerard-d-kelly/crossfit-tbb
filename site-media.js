@@ -6,6 +6,9 @@
    tasteful placeholder it ships with, so the site always looks complete.
 
    Fields (all paths relative to the site root, e.g. "assets/uploads/hero.mp4"):
+     hero_kicker     → small line above the homepage headline
+     hero_headline   → the big homepage headline
+     hero_lede       → the supporting sentence under the headline
      hero_video      → plays as the cinematic homepage background (muted, looped)
      hero_image      → still hero photo (also the video's poster / fallback)
      recovery_image  → photo in the "Premium recovery" section
@@ -18,6 +21,12 @@
     if (!url) return;
     var el = document.getElementById(id);
     if (el) el.setAttribute('src', url);
+  }
+
+  function setText(id, text) {
+    if (!text || !String(text).trim()) return;
+    var el = document.getElementById(id);
+    if (el) el.textContent = String(text).trim();
   }
 
   function applyHeroVideo(url, poster) {
@@ -39,7 +48,10 @@
 
   function apply(data) {
     data = data || {};
-    // Hero stills (both layout variants share the same photo).
+    // Hero copy (kicker / headline / supporting line).
+    setText('hero-kicker', data.hero_kicker);
+    setText('hero-headline', data.hero_headline);
+    setText('hero-lede', data.hero_lede);
     setSlot('hero-a-img', data.hero_image);
     setSlot('hero-b-img', data.hero_image);
     // Recovery + member photos.
@@ -51,12 +63,31 @@
     applyHeroVideo(data.hero_video, data.hero_image || 'assets/ph-hero.png');
   }
 
+  /* ── Section copy (content/copy.json) ─────────────────────────────────
+     Every element tagged data-copy="a.b.c" gets its text from the matching
+     nested key. Empty/missing keys leave the built-in copy untouched. */
+  function applyCopy(data, prefix) {
+    if (!data || typeof data !== 'object') return;
+    Object.keys(data).forEach(function (k) {
+      var key = prefix ? prefix + '.' + k : k;
+      var v = data[k];
+      if (v && typeof v === 'object') { applyCopy(v, key); return; }
+      if (v == null || !String(v).trim()) return;
+      var el = document.querySelector('[data-copy="' + key + '"]');
+      if (el) el.textContent = String(v).trim();
+    });
+  }
+
   function load() {
     try {
       fetch('content/site.json', { cache: 'no-cache' })
         .then(function (r) { return r.ok ? r.json() : {}; })
         .then(apply)
         .catch(function () { /* keep placeholders */ });
+      fetch('content/copy.json', { cache: 'no-cache' })
+        .then(function (r) { return r.ok ? r.json() : {}; })
+        .then(function (j) { applyCopy(j, ''); })
+        .catch(function () { /* keep built-in copy */ });
     } catch (e) { /* keep placeholders */ }
   }
 
