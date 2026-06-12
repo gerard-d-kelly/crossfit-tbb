@@ -1,17 +1,41 @@
 {
   "about": {
-    "heading": "A COACH-LED COMMUNITY BUILT FOR SERIOUS, SUSTAINABLE PROGRESS.",
-    "pillar1": { "title": "Real community", "text": "A welcoming room where members push each other. You'll know names by your second week." },
-    "pillar2": { "title": "Structured training", "text": "In-house programming with a CrossFit-dominated schedule, so every session has a purpose." },
-    "pillar3": { "title": "Expert coaching", "text": "Qualified instructors lead every class with hands-on, interactive coaching — technique first, intensity second." },
-    "pillar4": { "title": "Premium facilities", "text": "Top-quality equipment, open-gym access and a private recovery suite — sauna, cold plunge and physio." }
+    "heading": "A COACH-LED COMMUNITY BUILT FOR SERIOUS, SUSTAINABLE PROGRESS. Test",
+    "pillar1": {
+      "title": "Real community",
+      "text": "A welcoming room where members push each other. You'll know names by your second week."
+    },
+    "pillar2": {
+      "title": "Structured training",
+      "text": "In-house programming with a CrossFit-dominated schedule, so every session has a purpose."
+    },
+    "pillar3": {
+      "title": "Expert coaching",
+      "text": "Qualified instructors lead every class with hands-on, interactive coaching — technique first, intensity second."
+    },
+    "pillar4": {
+      "title": "Premium facilities",
+      "text": "Top-quality equipment, open-gym access and a private recovery suite — sauna, cold plunge and physio."
+    }
   },
   "offers": {
     "heading": "Programmes for every stage of your training.",
-    "card1": { "title": "CrossFit classes", "text": "Coach-led, varied daily workouts on an in-house programme. Scaled for every ability." },
-    "card2": { "title": "Open gym", "text": "Train on your own schedule with full access to top-quality equipment and floor space." },
-    "card3": { "title": "Competitor training", "text": "Focused programming and coaching for members chasing the competition floor." },
-    "card4": { "title": "Recovery services", "text": "A private recovery suite with a infrared sauna, cold plunge, and in-house physio & massage — recover as seriously as you train." }
+    "card1": {
+      "title": "CrossFit classes",
+      "text": "Coach-led, varied daily workouts on an in-house programme. Scaled for every ability."
+    },
+    "card2": {
+      "title": "Open gym",
+      "text": "Train on your own schedule with full access to top-quality equipment and floor space."
+    },
+    "card3": {
+      "title": "Competitor training",
+      "text": "Focused programming and coaching for members chasing the competition floor."
+    },
+    "card4": {
+      "title": "Recovery services",
+      "text": "A private recovery suite with a infrared sauna, cold plunge, and in-house physio & massage — recover as seriously as you train."
+    }
   },
   "faq": {
     "q1": "Do I need to be fit before I start?",
@@ -25,9 +49,21 @@
   },
   "stories": {
     "heading": "Results you can feel — and a room that has your back.",
-    "story1": { "quote": "\"I walked in having never touched a barbell. Six months later I'm fitter than I've ever been — and it's the coaching that did it. They meet you exactly where you are.\"", "name": "Rachel M.", "meta": "Member · 1 year" },
-    "story2": { "quote": "\"Best community in Belfast. The recovery room is a game-changer after a heavy week.\"", "name": "Conor D.", "meta": "Member · 2 years" },
-    "story3": { "quote": "\"The trial week made starting completely painless. I never felt out of place.\"", "name": "Aoife K.", "meta": "Member · 8 months" }
+    "story1": {
+      "quote": "\"I walked in having never touched a barbell. Six months later I'm fitter than I've ever been — and it's the coaching that did it. They meet you exactly where you are.\"",
+      "name": "Rachel M.",
+      "meta": "Member · 1 year"
+    },
+    "story2": {
+      "quote": "\"Best community in Belfast. The recovery room is a game-changer after a heavy week.\"",
+      "name": "Conor D.",
+      "meta": "Member · 2 years"
+    },
+    "story3": {
+      "quote": "\"The trial week made starting completely painless. I never felt out of place.\"",
+      "name": "Aoife K.",
+      "meta": "Member · 8 months"
+    }
   },
   "cta": {
     "kicker": "Your first class is free",
