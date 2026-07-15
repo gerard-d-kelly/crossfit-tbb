@@ -12,6 +12,7 @@
      hero_video      → plays as the cinematic homepage background (muted, looped)
      hero_image      → still hero photo (also the video's poster / fallback)
      recovery_image  → photo in the "Premium recovery" section
+     recovery_video  → plays in the "Premium recovery" section (muted, looped)
      member1_photo   → avatar for the first member story
      member2_photo   → avatar for the second member story
      member3_photo   → avatar for the third member story */
@@ -46,6 +47,17 @@
     document.documentElement.setAttribute('data-hero-video', 'on');
   }
 
+  function applyVideo(videoId, url, posterEl) {
+    var vid = document.getElementById(videoId);
+    if (!vid || !url) return;
+    if (!/^https?:|^\//.test(url)) url = '/' + url.replace(/^\.?\//, '');
+    vid.setAttribute('src', url);
+    vid.load();
+    vid.hidden = false;
+    var p = vid.play();
+    if (p && p.catch) p.catch(function () { /* autoplay blocked — photo shows */ });
+  }
+
   function apply(data) {
     data = data || {};
     // Hero copy (kicker / headline / supporting line).
@@ -61,6 +73,8 @@
     setSlot('story-3-av', data.member3_photo);
     // Cinematic hero video (uses hero_image as poster if present).
     applyHeroVideo(data.hero_video, data.hero_image || 'assets/ph-hero.png');
+    // Recovery showreel video (sits over the recovery photo when set).
+    applyVideo('recovery-video', data.recovery_video);
   }
 
   /* ── Section copy (content/copy.json) ─────────────────────────────────
