@@ -68,7 +68,13 @@ collections:
             label: Recovery suite photo
             widget: image
             required: false
-            hint: Photo for the "Premium recovery" section (sauna · cold plunge · physio).
+            hint: Photo for the "Premium recovery" section (sauna · cold plunge · physio). Also shown while the recovery video loads, or if there's no video.
+          - name: recovery_video
+            label: Recovery suite video
+            widget: file
+            required: false
+            media_library: { config: { max_file_size: 15728640 } }
+            hint: Optional. A short, looping clip (MP4, ideally under ~10 MB) that plays muted in the "Premium recovery" section. Leave empty to show the photo instead.
           - name: member1_photo
             label: Member story photo — Rachel M.
             widget: image
