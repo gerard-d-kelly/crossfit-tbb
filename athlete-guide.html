@@ -20,6 +20,7 @@
   </style>
 </helmet>
 <style>doc-page:not(:defined){visibility:hidden}</style>
+<div id="doc-scale-wrap" style="width:100%;overflow:hidden;">
 <x-import component-from-global-scope="doc-page" from="./doc-page.js" size="letter" orientation="portrait" margin="0" hint-size="100%,100%">
 
   <div slot="header" style="background:#1C1B1A;background-image:url('assets/noise.png');background-blend-mode:overlay;background-repeat:repeat;padding:14px 68px 10px;box-sizing:border-box;">
@@ -32,12 +33,12 @@
 
     <div style="background-color:#1C1B1A;background-image:url('assets/noise.png');background-blend-mode:overlay;background-repeat:repeat;background-size:400px 400px;position:relative;overflow:hidden;min-height:9.5in;box-sizing:border-box;padding:68px;display:flex;flex-direction:column;justify-content:center;">
     <img src="assets/logo.png" alt="The Battle of Beersbridge" style="width:600px;max-width:100%;height:auto;">
-    <div style="margin-top:36px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.08em;color:#9C978E;text-transform:uppercase;">Athlete guide &amp; competition manual</div>
+    <div style="margin-top:36px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.08em;color:#9C978E;text-transform:uppercase;">Athlete guide &amp; competition manual</div>
   </div>
 
     <div style="background-color:#1C1B1A;background-image:url('assets/noise.png');background-blend-mode:overlay;background-repeat:repeat;background-size:400px 400px;break-before:page;padding:56px 68px 60px;box-sizing:border-box;">
     <h2 style="font-family:'IBM Plex Mono',monospace;font-size:38px;color:#ECE8DF;text-transform:uppercase;margin-bottom:28px;">Contents</h2>
-    <div style="display:flex;flex-direction:column;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.04em;color:#C9C5BD;text-transform:uppercase;">
+    <div style="display:flex;flex-direction:column;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#C9C5BD;text-transform:uppercase;">
       <a href="#welcome" style="color:#C9C5BD;text-decoration:none;display:flex;justify-content:space-between;border-bottom:1px solid #3A3733;padding-bottom:10px;"><span>Welcome</span><span style="color:#8A6BAE;">01</span></a>
       <a href="#overview" style="color:#C9C5BD;text-decoration:none;display:flex;justify-content:space-between;border-bottom:1px solid #3A3733;padding-bottom:10px;"><span>Competition overview</span><span style="color:#8A6BAE;">02</span></a>
       <a href="#venue" style="color:#C9C5BD;text-decoration:none;display:flex;justify-content:space-between;border-bottom:1px solid #3A3733;padding-bottom:10px;"><span>Venue &amp; schedule</span><span style="color:#8A6BAE;">03</span></a>
@@ -53,7 +54,7 @@
     <div id="welcome" style="background-color:#1C1B1A;background-image:url('assets/noise.png');background-blend-mode:overlay;background-repeat:repeat;background-size:400px 400px;break-before:page;position:relative;overflow:hidden;padding:56px 68px 60px;box-sizing:border-box;">
     <img src="assets/crown.png" alt="" style="position:absolute;top:100px;right:-120px;width:420px;opacity:0.5;">
     <h2 style="font-family:'IBM Plex Mono',monospace;font-size:38px;color:#ECE8DF;text-transform:uppercase;margin-bottom:26px;position:relative;">Welcome</h2>
-    <div style="position:relative;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.85;color:#C9C5BD;max-width:6.3in;">
+    <div style="position:relative;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.85;color:#C9C5BD;max-width:6.3in;">
       <p style="margin-bottom:16px;">Welcome to the inaugural Battle of Beersbridge.</p>
       <p style="margin-bottom:16px;">Thank you for choosing to be part of our first competition.</p>
       <p style="margin-bottom:16px;">The Battle of Beersbridge was created to showcase what we love most about CrossFit: challenging workouts, great teamwork and a community that enjoys competing together. Whether you're chasing a podium finish or simply looking to test yourself alongside your training partner, we want this to be a competition you'll remember and want to return to.</p>
@@ -67,13 +68,13 @@
 
     <div id="overview" style="background-color:#1C1B1A;background-image:url('assets/noise.png');background-blend-mode:overlay;background-repeat:repeat;background-size:400px 400px;break-before:page;padding:56px 68px 60px;box-sizing:border-box;">
     <h2 style="font-family:'IBM Plex Mono',monospace;font-size:38px;color:#ECE8DF;text-transform:uppercase;margin-bottom:20px;">Competition overview</h2>
-    <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.85;color:#C9C5BD;margin-bottom:28px;max-width:6.3in;">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.85;color:#C9C5BD;margin-bottom:28px;max-width:6.3in;">
       <p style="margin-bottom:14px;">The Battle of Beersbridge is a same-sex pairs competition consisting of four events and six scoring opportunities.</p>
       <p>The competition has been designed to test a broad range of CrossFit skills, including endurance, strength, weightlifting, gymnastics and teamwork. Teams will compete across a variety of workout formats, with reseeding after each event based on the current leaderboard.</p>
     </div>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#ECE8DF;text-transform:uppercase;margin-bottom:14px;">Format</h3>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:8px;margin-bottom:32px;">
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:8px;margin-bottom:32px;">
       <li>Teams of two</li>
       <li>Same-sex pairs</li>
       <li>RX and Intermediate divisions</li>
@@ -87,7 +88,7 @@
     </ul>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#ECE8DF;text-transform:uppercase;margin-bottom:14px;">Prize structure</h3>
-    <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;text-transform:uppercase;">
+    <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;text-transform:uppercase;">
       <thead>
         <tr style="border-bottom:1px solid #A873D9;">
           <th style="text-align:left;padding:8px 6px;color:#ECE8DF;">Division</th>
@@ -107,7 +108,7 @@
 
     <div id="venue" style="background-color:#1C1B1A;background-image:url('assets/noise.png');background-blend-mode:overlay;background-repeat:repeat;background-size:400px 400px;break-before:page;padding:56px 68px 60px;box-sizing:border-box;">
     <h2 style="font-family:'IBM Plex Mono',monospace;font-size:38px;color:#ECE8DF;text-transform:uppercase;margin-bottom:20px;">Venue &amp; schedule</h2>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.85;color:#C9C5BD;max-width:6.3in;margin-bottom:20px;">The map below shows the competition venue and the recommended parking locations.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.85;color:#C9C5BD;max-width:6.3in;margin-bottom:20px;">The map below shows the competition venue and the recommended parking locations.</p>
     <div style="width:100%;margin-bottom:32px;break-inside:avoid;border:1px solid #3A3733;border-radius:6px;overflow:hidden;position:relative;">
       <img src="assets/venue-map-dark.png" alt="Venue and parking map" style="width:100%;display:block;">
       <div style="position:absolute;left:26.6%;top:13.4%;transform:translate(-50%,-50%);background:#A873D9;color:#FFFFFF;padding:5px 10px;border-radius:4px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;white-space:nowrap;text-align:center;line-height:1.3;">Connswater<br>parking</div>
@@ -116,61 +117,61 @@
     </div>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#ECE8DF;text-transform:uppercase;margin-bottom:10px;">Competition venue</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.75;color:#C9C5BD;margin-bottom:22px;">CrossFit TBB<br>Unit 7 Owen O'Cork Mill<br>288 Beersbridge Road<br>Belfast<br>BT5 5DX<br><br>All events will take place at CrossFit TBB.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.75;color:#C9C5BD;margin-bottom:22px;">CrossFit TBB<br>Unit 7 Owen O'Cork Mill<br>288 Beersbridge Road<br>Belfast<br>BT5 5DX<br><br>All events will take place at CrossFit TBB.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#ECE8DF;text-transform:uppercase;margin-bottom:10px;">Parking</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.75;color:#C9C5BD;margin-bottom:10px;">Limited parking is available at CrossFit TBB and is expected to fill quickly. Additional parking is available at:</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:12px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.75;color:#C9C5BD;margin-bottom:10px;">Limited parking is available at CrossFit TBB and is expected to fill quickly. Additional parking is available at:</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:12px;">
       <li>Connswater Shopping Centre</li>
       <li>Dixon Park Playing Fields</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.75;color:#C9C5BD;margin-bottom:26px;">Please allow sufficient time to park and make your way to athlete check-in before the athlete briefing.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.75;color:#C9C5BD;margin-bottom:26px;">Please allow sufficient time to park and make your way to athlete check-in before the athlete briefing.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#ECE8DF;text-transform:uppercase;margin-bottom:10px;">Athlete check-in</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.75;color:#C9C5BD;margin-bottom:10px;"><strong style="color:#ECE8DF;">Location:</strong> CrossFit TBB &nbsp;&nbsp; <strong style="color:#ECE8DF;">Time:</strong> 08:45</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.75;color:#C9C5BD;margin-bottom:8px;">All athletes must check in before the athlete briefing. During check-in you will:</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:26px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.75;color:#C9C5BD;margin-bottom:10px;"><strong style="color:#ECE8DF;">Location:</strong> CrossFit TBB &nbsp;&nbsp; <strong style="color:#ECE8DF;">Time:</strong> 08:45</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.75;color:#C9C5BD;margin-bottom:8px;">All athletes must check in before the athlete briefing. During check-in you will:</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:26px;">
       <li>Register your team.</li>
       <li>Sign any outstanding waivers.</li>
       <li>Receive any final competition information.</li>
     </ul>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#ECE8DF;text-transform:uppercase;margin-bottom:10px;">Athlete briefing</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.75;color:#C9C5BD;margin-bottom:10px;"><strong style="color:#ECE8DF;">Location:</strong> CrossFit TBB &nbsp;&nbsp; <strong style="color:#ECE8DF;">Time:</strong> 09:00</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.75;color:#C9C5BD;margin-bottom:8px;">Attendance at the athlete briefing is mandatory. The briefing will cover:</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.75;color:#C9C5BD;margin-bottom:10px;"><strong style="color:#ECE8DF;">Location:</strong> CrossFit TBB &nbsp;&nbsp; <strong style="color:#ECE8DF;">Time:</strong> 09:00</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.75;color:#C9C5BD;margin-bottom:8px;">Attendance at the athlete briefing is mandatory. The briefing will cover:</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Competition flow</li>
       <li>Workout procedures</li>
       <li>Judging standards</li>
       <li>Safety information</li>
       <li>Final athlete questions</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.75;color:#C9C5BD;">Event One will begin immediately after the athlete briefing.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.75;color:#C9C5BD;">Event One will begin immediately after the athlete briefing.</p>
   </div>
 
     <div id="rules" style="background-color:#1C1B1A;background-image:url('assets/noise.png');background-blend-mode:overlay;background-repeat:repeat;background-size:400px 400px;break-before:page;padding:56px 68px 60px;box-sizing:border-box;">
     <h2 style="font-family:'IBM Plex Mono',monospace;font-size:38px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">General competition rules</h2>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#8A867F;max-width:6.3in;margin-bottom:28px;">The following rules apply to all athletes throughout the competition unless otherwise stated within an individual event brief.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#8A867F;max-width:6.3in;margin-bottom:28px;">The following rules apply to all athletes throughout the competition unless otherwise stated within an individual event brief.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Athlete conduct</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">All athletes are expected to demonstrate professionalism, respect and good sportsmanship throughout the day. Unsportsmanlike behaviour towards judges, volunteers, spectators or fellow competitors may result in penalties or disqualification at the discretion of the Competition Director.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">All athletes are expected to demonstrate professionalism, respect and good sportsmanship throughout the day. Unsportsmanlike behaviour towards judges, volunteers, spectators or fellow competitors may result in penalties or disqualification at the discretion of the Competition Director.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Judges</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:8px;">Each team will be assigned a judge for every event. Judges are responsible for:</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:10px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:8px;">Each team will be assigned a judge for every event. Judges are responsible for:</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:10px;">
       <li>Counting repetitions</li>
       <li>Applying movement standards</li>
       <li>Recording scores</li>
       <li>Communicating no-repetitions</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">The judge's decision is final.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">The judge's decision is final.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Appeals</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">There will be no formal appeals process during the competition. If a scoring discrepancy is identified, the team captain should speak to the Head Judge immediately after the event has concluded and before the next heat begins. Judgement calls and no-repetition decisions cannot be appealed.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">There will be no formal appeals process during the competition. If a scoring discrepancy is identified, the team captain should speak to the Head Judge immediately after the event has concluded and before the next heat begins. Judgement calls and no-repetition decisions cannot be appealed.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Teamwork</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:8px;">Athletes may encourage and communicate with their teammate throughout every event unless specifically stated otherwise. Athletes may not physically assist their teammate unless the workout explicitly allows it. Examples of prohibited assistance include:</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:8px;">Athletes may encourage and communicate with their teammate throughout every event unless specifically stated otherwise. Athletes may not physically assist their teammate unless the workout explicitly allows it. Examples of prohibited assistance include:</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Assisting with lifts</li>
       <li>Supporting bodyweight</li>
       <li>Pushing, pulling or carrying a teammate</li>
@@ -178,67 +179,67 @@
     </ul>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Equipment</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Only the prescribed competition equipment may be used. Athletes may not modify, move or substitute equipment unless instructed by a judge. Equipment must remain within the assigned competition lane unless directed otherwise.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Only the prescribed competition equipment may be used. Athletes may not modify, move or substitute equipment unless instructed by a judge. Equipment must remain within the assigned competition lane unless directed otherwise.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Chalk</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Loose chalk and liquid chalk are permitted. Athletes may chalk their hands during the workout provided it does not interfere with another team or delay the flow of competition.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Loose chalk and liquid chalk are permitted. Athletes may chalk their hands during the workout provided it does not interfere with another team or delay the flow of competition.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Personal equipment</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:8px;">Athletes may use:</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:10px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:8px;">Athletes may use:</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:10px;">
       <li>Weightlifting belts</li><li>Wrist wraps</li><li>Knee sleeves</li><li>Knee wraps</li><li>Hand grips</li><li>Gymnastics tape</li><li>Finger tape</li><li>Wrist tape</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">The use of lifting straps is not permitted. Headphones or personal audio devices are not permitted while competing.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">The use of lifting straps is not permitted. Headphones or personal audio devices are not permitted while competing.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Scoring</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Scores will be recorded immediately following each event. It is the responsibility of both athletes to verify their score before leaving the competition floor. Once a score has been signed and submitted it is considered final.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Scores will be recorded immediately following each event. It is the responsibility of both athletes to verify their score before leaving the competition floor. Once a score has been signed and submitted it is considered final.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Tie breaks</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">If two teams finish with the same score in an event, any published tie-break score will determine the finishing order. Where no tie-break is available, teams will receive the same placing for that event.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">If two teams finish with the same score in an event, any published tie-break score will determine the finishing order. Where no tie-break is available, teams will receive the same placing for that event.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Time caps</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Each event has a published time cap. If a team does not complete the workout within the time cap, their score will be recorded according to the workout's scoring system. Any unfinished repetitions will be recorded as instructed within the event brief.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Each event has a published time cap. If a team does not complete the workout within the time cap, their score will be recorded according to the workout's scoring system. Any unfinished repetitions will be recorded as instructed within the event brief.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">No reps</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">A judge may issue a no-repetition for any movement that does not meet the published movement standard. Athletes are responsible for correcting the fault before continuing. Only successful repetitions count towards the team's score.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">A judge may issue a no-repetition for any movement that does not meet the published movement standard. Athletes are responsible for correcting the fault before continuing. Only successful repetitions count towards the team's score.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Safety</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Athlete safety will always take priority over competition. The Competition Director and Head Judge reserve the right to stop any athlete they believe is unable to continue safely. Medical personnel will be available throughout the day.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Athlete safety will always take priority over competition. The Competition Director and Head Judge reserve the right to stop any athlete they believe is unable to continue safely. Medical personnel will be available throughout the day.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Warm-up areas</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Athletes are welcome to use the designated warm-up area between events. Please be respectful of other athletes and return equipment after use. Competition equipment may not be removed from the field of play.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Athletes are welcome to use the designated warm-up area between events. Please be respectful of other athletes and return equipment after use. Competition equipment may not be removed from the field of play.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Athlete call</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Athletes should report to the designated marshalling area at least 10 minutes before their scheduled heat. Failure to report on time may result in the team missing their heat.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Athletes should report to the designated marshalling area at least 10 minutes before their scheduled heat. Failure to report on time may result in the team missing their heat.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Spectators</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Spectators are welcome throughout the day. Only competing athletes, judges and authorised volunteers are permitted inside the competition field of play.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:22px;">Spectators are welcome throughout the day. Only competing athletes, judges and authorised volunteers are permitted inside the competition field of play.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Photography &amp; media</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;">Photographs and video will be taken throughout the competition. By participating, athletes consent to the use of this content by CrossFit TBB for promotional and marketing purposes.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;">Photographs and video will be taken throughout the competition. By participating, athletes consent to the use of this content by CrossFit TBB for promotional and marketing purposes.</p>
   </div>
 
     <div id="formats" style="background-color:#1C1B1A;background-image:url('assets/noise.png');background-blend-mode:overlay;background-repeat:repeat;background-size:400px 400px;break-before:page;position:relative;overflow:hidden;padding:56px 68px 60px;box-sizing:border-box;">
     <img src="assets/crown.png" alt="" style="position:absolute;top:120px;right:-140px;width:420px;opacity:0.14;">
     <h2 style="font-family:'IBM Plex Mono',monospace;font-size:38px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;position:relative;">Competition formats</h2>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#8A867F;max-width:6.3in;margin-bottom:26px;position:relative;">Throughout the competition, movements will use one of the following work-sharing formats.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#8A867F;max-width:6.3in;margin-bottom:26px;position:relative;">Throughout the competition, movements will use one of the following work-sharing formats.</p>
 
     <div style="position:relative;display:flex;flex-direction:column;gap:22px;max-width:6.3in;">
       <div>
         <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:6px;">Synchro</h3>
-        <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;">Both athletes perform every repetition together. The prescribed synchro point for each movement is detailed within the event standards. If the synchro requirement is not met, the repetition will not count.</p>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;">Both athletes perform every repetition together. The prescribed synchro point for each movement is detailed within the event standards. If the synchro requirement is not met, the repetition will not count.</p>
       </div>
       <div>
         <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:6px;">Shared as desired</h3>
-        <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;">The prescribed work may be divided between teammates in any way unless otherwise stated. Athletes may change over at any time.</p>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;">The prescribed work may be divided between teammates in any way unless otherwise stated. Athletes may change over at any time.</p>
       </div>
       <div>
         <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:6px;">Split equally</h3>
-        <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;">The prescribed work must be divided equally between both athletes. Each athlete must complete exactly half of the total prescribed work.</p>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;">The prescribed work must be divided equally between both athletes. Each athlete must complete exactly half of the total prescribed work.</p>
       </div>
       <div>
         <h3 style="font-family:'IBM Plex Mono',monospace;font-size:20px;color:#ECE8DF;text-transform:uppercase;margin-bottom:6px;">Assigned</h3>
-        <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;">Each athlete has a designated movement or workload. Assignments are detailed within the event brief and must be completed as prescribed.</p>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;">Each athlete has a designated movement or workload. Assignments are detailed within the event brief and must be completed as prescribed.</p>
       </div>
     </div>
   </div>
@@ -248,35 +249,35 @@
     <h2 style="font-family:'IBM Plex Mono',monospace;font-size:36px;color:#ECE8DF;text-transform:uppercase;margin-bottom:20px;">Running Grace</h2>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Overview</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:10px;">Event One begins the Battle of Beersbridge with a fast-paced twist on the classic CrossFit benchmark workout, Grace. Teams will compete head-to-head within their assigned heat, racing against both the clock and the team beside them. Following Event One, all teams will be reseeded based on their performance for the remainder of the competition.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:16px;">The event consists of a six-minute race to complete the workout, followed immediately by a one-minute window to establish a max distance double broad jump.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:10px;">Event One begins the Battle of Beersbridge with a fast-paced twist on the classic CrossFit benchmark workout, Grace. Teams will compete head-to-head within their assigned heat, racing against both the clock and the team beside them. Following Event One, all teams will be reseeded based on their performance for the remainder of the competition.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:16px;">The event consists of a six-minute race to complete the workout, followed immediately by a one-minute window to establish a max distance double broad jump.</p>
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Workout</h3>
-    <div style="border-left:3px solid #A873D9;padding:4px 0 4px 18px;margin-bottom:16px;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.9;color:#ECE8DF;text-transform:uppercase;">
+    <div style="border-left:3px solid #A873D9;padding:4px 0 4px 18px;margin-bottom:16px;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.9;color:#ECE8DF;text-transform:uppercase;">
       On a 7:00 rolling clock...<br>5 rounds for time:<br>6 dumbbell hang clean to overhead<br>3 shuttle runs<br>At 6:00:<br>Max distance double broad jump
     </div>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#ECE8DF;text-transform:uppercase;margin-bottom:24px;">Time cap: 7:00</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#ECE8DF;text-transform:uppercase;margin-bottom:24px;">Time cap: 7:00</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Scoring</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#ECE8DF;text-transform:uppercase;margin-bottom:4px;">Score A</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:4px;">Time to complete all five rounds. If the workout is not completed before 6:00, the score will be the total rounds and repetitions completed.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A867F;text-transform:uppercase;margin-bottom:14px;">Tie break: Time to complete round 1.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#ECE8DF;text-transform:uppercase;margin-bottom:4px;">Score B</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:4px;">Maximum single distance achieved during the double broad jump.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A867F;text-transform:uppercase;margin-bottom:24px;">Tie break: Score A.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#ECE8DF;text-transform:uppercase;margin-bottom:4px;">Score A</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:4px;">Time to complete all five rounds. If the workout is not completed before 6:00, the score will be the total rounds and repetitions completed.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A867F;text-transform:uppercase;margin-bottom:14px;">Tie break: Time to complete round 1.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#ECE8DF;text-transform:uppercase;margin-bottom:4px;">Score B</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:4px;">Maximum single distance achieved during the double broad jump.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A867F;text-transform:uppercase;margin-bottom:24px;">Tie break: Score A.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Event flow</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:12px;">Each team will be assigned a competition lane. At the sound of 3, 2, 1, go, teams begin with six synchronised dumbbell hang clean to overhead repetitions.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:12px;">Once all six repetitions have been completed, both athletes complete three shuttle runs. Each shuttle consists of 10 metres out and 10 metres back, completed three times before returning to the dumbbells.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:8px;">Teams continue in this format until:</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:12px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:12px;">Each team will be assigned a competition lane. At the sound of 3, 2, 1, go, teams begin with six synchronised dumbbell hang clean to overhead repetitions.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:12px;">Once all six repetitions have been completed, both athletes complete three shuttle runs. Each shuttle consists of 10 metres out and 10 metres back, completed three times before returning to the dumbbells.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:8px;">Teams continue in this format until:</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:12px;">
       <li>All five rounds are completed.</li>
       <li>The clock reaches 6:00.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:12px;">At exactly 6:00, all remaining work stops and teams immediately move to the double broad jump station. Only one athlete may attempt the jump at a time. Athletes may complete as many attempts as they wish during the final minute.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:26px;">Every jump begins with both feet behind the start line. The landing must be controlled before the distance is measured. Distance will be measured from the start line to the heel closest to the start line.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:12px;">At exactly 6:00, all remaining work stops and teams immediately move to the double broad jump station. Only one athlete may attempt the jump at a time. Athletes may complete as many attempts as they wish during the final minute.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:26px;">Every jump begins with both feet behind the start line. The landing must be controlled before the distance is measured. Distance will be measured from the start line to the heel closest to the start line.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Equipment &amp; layout</h3>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:18px;">
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:18px;">
       <li>Competition dumbbell — 32.5/22.5kg RX, 25/17.5kg Inters</li>
       <li>Shuttle lane</li>
       <li>Double broad jump lane</li>
@@ -302,7 +303,7 @@
     </div>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:10px;">Movement format</h3>
-    <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;text-transform:uppercase;margin-bottom:32px;">
+    <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;text-transform:uppercase;margin-bottom:32px;">
       <thead><tr style="border-bottom:1px solid #A873D9;"><th style="text-align:left;padding:8px 6px;color:#ECE8DF;">Movement</th><th style="text-align:left;padding:8px 6px;color:#ECE8DF;">Format</th></tr></thead>
       <tbody>
         <tr style="border-bottom:1px solid #3A3733;"><td style="padding:8px 6px;">Dumbbell hang clean to overhead</td><td style="padding:8px 6px;">Synchro</td></tr>
@@ -314,8 +315,8 @@
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#ECE8DF;text-transform:uppercase;margin-bottom:18px;">Workout standards</h3>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Dumbbell hang clean to overhead</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Teams complete all repetitions synchronously.</li>
       <li>The dumbbells begin below the hips.</li>
       <li>The movement may be performed as a clean and jerk, clean and push press, clean and push jerk or clean and split jerk.</li>
@@ -324,8 +325,8 @@
       <li>At some point during the repetition, both athletes must be locked out overhead together before either athlete lowers their dumbbells.</li>
       <li>The repetition is complete when hips and knees are fully extended, elbows are fully locked out, and dumbbells are under control overhead.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Failure to reach full overhead lockout.</li>
       <li>Failure to reach full hip or knee extension.</li>
       <li>Either athlete lowers the dumbbells before both athletes have achieved the synchronisation point.</li>
@@ -333,8 +334,8 @@
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Shuttle run</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Teams complete every shuttle together.</li>
       <li>Each shuttle consists of 10 metres to the turnaround line and 10 metres back to the start line.</li>
       <li>Three complete shuttles must be completed each round.</li>
@@ -342,8 +343,8 @@
       <li>At each turnaround, both athletes must touch the ground with one hand behind the line before changing direction.</li>
       <li>The repetition is complete when both athletes have completed all three prescribed shuttles.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Failure for both athletes to touch the ground behind the turnaround line.</li>
       <li>Failure for both athletes to complete all three prescribed shuttles.</li>
       <li>Breaking or removing the tether during the run.</li>
@@ -351,8 +352,8 @@
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Double broad jump</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Begins immediately at the 6:00 mark.</li>
       <li>Only one athlete may attempt a jump at a time.</li>
       <li>Athletes may complete as many attempts as time allows.</li>
@@ -361,8 +362,8 @@
       <li>The landing must be controlled before the judge measures the distance.</li>
       <li>Distance will be measured from the start line to the heel closest to the take-off line.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;">
       <li>Feet begin on or over the start line.</li>
       <li>Athlete fails to demonstrate control on landing.</li>
       <li>Any body part behind the heels contacts the floor before the measurement is taken.</li>
@@ -375,23 +376,23 @@
     <h2 style="font-family:'IBM Plex Mono',monospace;font-size:36px;color:#ECE8DF;text-transform:uppercase;margin-bottom:20px;">Chip Away</h2>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Overview</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:16px;">Event Two is a fully synchronised long chipper designed to test teamwork and consistency under fatigue. Teams must work through three movements for time, completing every repetition in the prescribed order. Every repetition throughout the workout is performed synchronously, requiring both athletes to work together from start to finish.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:16px;">Event Two is a fully synchronised long chipper designed to test teamwork and consistency under fatigue. Teams must work through three movements for time, completing every repetition in the prescribed order. Every repetition throughout the workout is performed synchronously, requiring both athletes to work together from start to finish.</p>
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Workout</h3>
-    <div style="border-left:3px solid #A873D9;padding:4px 0 4px 18px;margin-bottom:16px;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.9;color:#ECE8DF;text-transform:uppercase;">
+    <div style="border-left:3px solid #A873D9;padding:4px 0 4px 18px;margin-bottom:16px;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.9;color:#ECE8DF;text-transform:uppercase;">
       For time:<br>45 wall balls<br>45 deadlifts<br>15 burpee box jump overs<br>30 wall balls<br>30 deadlifts<br>15 burpee box jump overs<br>15 wall balls<br>15 deadlifts<br>15 burpee box jump overs
     </div>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#ECE8DF;text-transform:uppercase;margin-bottom:24px;">Time cap: 25:00</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#ECE8DF;text-transform:uppercase;margin-bottom:24px;">Time cap: 25:00</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Scoring</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:4px;">Time to complete the workout. If the workout is not completed within the time cap, the score will be the total repetitions completed.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A867F;text-transform:uppercase;margin-bottom:24px;">Tie break: Time to complete 45 wall balls, deadlifts and 15 burpees.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:4px;">Time to complete the workout. If the workout is not completed within the time cap, the score will be the total repetitions completed.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A867F;text-transform:uppercase;margin-bottom:24px;">Tie break: Time to complete 45 wall balls, deadlifts and 15 burpees.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Event flow</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:12px;">Teams begin at the wall ball station. Once all 45 wall balls have been completed, teams move directly to the deadlift station. After completing all 45 deadlifts, teams move immediately to the burpee box jump overs. This sequence is repeated until all prescribed work has been completed.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:26px;">Athletes are responsible for changing the weight on their own barbell before beginning each new deadlift section. There is no rest between movements.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:12px;">Teams begin at the wall ball station. Once all 45 wall balls have been completed, teams move directly to the deadlift station. After completing all 45 deadlifts, teams move immediately to the burpee box jump overs. This sequence is repeated until all prescribed work has been completed.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:26px;">Athletes are responsible for changing the weight on their own barbell before beginning each new deadlift section. There is no rest between movements.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Equipment &amp; layout</h3>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:18px;">
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:18px;">
       <li>Wall ball — 12/9kg &amp; 9/6kg RX, 9/6kg Inters</li>
       <li>Wall ball target — 10/9ft male/female</li>
       <li>Deadlift barbell — 100-120-140/65-80-95kg RX, 80-100-120/50-65-80kg Inters</li>
@@ -420,7 +421,7 @@
     </div>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:10px;">Movement format</h3>
-    <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;text-transform:uppercase;margin-bottom:32px;">
+    <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;text-transform:uppercase;margin-bottom:32px;">
       <thead><tr style="border-bottom:1px solid #A873D9;"><th style="text-align:left;padding:8px 6px;color:#ECE8DF;">Movement</th><th style="text-align:left;padding:8px 6px;color:#ECE8DF;">Format</th></tr></thead>
       <tbody>
         <tr style="border-bottom:1px solid #3A3733;"><td style="padding:8px 6px;">Wall ball</td><td style="padding:8px 6px;">Synchro</td></tr>
@@ -432,8 +433,8 @@
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#ECE8DF;text-transform:uppercase;margin-bottom:18px;">Workout standards</h3>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Wall ball</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Every repetition is completed synchronously.</li>
       <li>Both athletes must squat below parallel.</li>
       <li>Both athletes must reach the bottom of the squat together.</li>
@@ -442,8 +443,8 @@
       <li>The repetition is complete once both wall balls have contacted the prescribed target.</li>
       <li>In the RX division, two different wall ball weights will be used. Athletes may swap wall balls at any time.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Failure to squat below parallel.</li>
       <li>Failure for either wall ball to contact the prescribed target.</li>
       <li>Either athlete leaves the bottom of the squat before their teammate reaches the synchro position.</li>
@@ -451,8 +452,8 @@
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Deadlift</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Every repetition is completed synchronously.</li>
       <li>Barbells begin on the floor.</li>
       <li>Athletes lift the barbell from the floor to full extension.</li>
@@ -461,16 +462,16 @@
       <li>The repetition is complete once both barbells have returned to the floor.</li>
       <li>Athletes are responsible for changing the prescribed weight before the next deadlift section.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Failure to reach full hip or knee extension.</li>
       <li>Either athlete begins lowering the barbell before both athletes have reached full lockout together.</li>
       <li>Bouncing the barbell to gain an advantage.</li>
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Burpee box jump over</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Every repetition is completed synchronously.</li>
       <li>Athletes may face either direction.</li>
       <li>Chest and thighs must make contact with the floor.</li>
@@ -481,8 +482,8 @@
       <li>Both athletes must be standing on top of the box together before either athlete leaves the box.</li>
       <li>The repetition is complete once both athletes have landed on the opposite side of the box.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;">
       <li>Failure for chest and thighs to touch the floor.</li>
       <li>Either athlete leaves the floor before both athletes have reached the synchro position.</li>
       <li>Step-up or step-over used instead of jumping.</li>
@@ -496,43 +497,43 @@
     <h2 style="font-family:'IBM Plex Mono',monospace;font-size:36px;color:#ECE8DF;text-transform:uppercase;margin-bottom:20px;">Push Pull</h2>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Overview</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:10px;">Event Three is a two-part event designed to test upper body muscular endurance and high-skill gymnastics under fatigue. The first scored section combines skipping, bench press and a high-skill gymnastics movement. Following a four-minute rest, athletes move into a sprint finish on the Echo Bike before accumulating as many bar muscle-ups as possible within the remaining time.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:16px;">Event Three contains two scoring opportunities.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:10px;">Event Three is a two-part event designed to test upper body muscular endurance and high-skill gymnastics under fatigue. The first scored section combines skipping, bench press and a high-skill gymnastics movement. Following a four-minute rest, athletes move into a sprint finish on the Echo Bike before accumulating as many bar muscle-ups as possible within the remaining time.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:16px;">Event Three contains two scoring opportunities.</p>
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Workout</h3>
-    <div style="border-left:3px solid #A873D9;padding:4px 0 4px 18px;margin-bottom:10px;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.9;color:#ECE8DF;text-transform:uppercase;">
+    <div style="border-left:3px solid #A873D9;padding:4px 0 4px 18px;margin-bottom:10px;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.9;color:#ECE8DF;text-transform:uppercase;">
       AMRAP in 8:00:<br>40 double unders<br>20 bench presses<br>40 double unders<br>2 peg board ascents (RX) || 2 rope climbs (Inters)
     </div>
-    <div style="border-left:3px solid #3A3733;padding:4px 0 4px 18px;margin-bottom:10px;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.9;color:#8A867F;text-transform:uppercase;">
+    <div style="border-left:3px solid #3A3733;padding:4px 0 4px 18px;margin-bottom:10px;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.9;color:#8A867F;text-transform:uppercase;">
       Rest 4:00
     </div>
-    <div style="border-left:3px solid #A873D9;padding:4px 0 4px 18px;margin-bottom:16px;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.9;color:#ECE8DF;text-transform:uppercase;">
+    <div style="border-left:3px solid #A873D9;padding:4px 0 4px 18px;margin-bottom:16px;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.9;color:#ECE8DF;text-transform:uppercase;">
       AMRAP in 4:00:<br>50/40 calorie Echo Bike<br>Max bar muscle-ups
     </div>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#ECE8DF;text-transform:uppercase;margin-bottom:24px;">Part A time cap: 8:00 &nbsp;&nbsp; Rest: 4:00 &nbsp;&nbsp; Part B time cap: 4:00</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#ECE8DF;text-transform:uppercase;margin-bottom:24px;">Part A time cap: 8:00 &nbsp;&nbsp; Rest: 4:00 &nbsp;&nbsp; Part B time cap: 4:00</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Scoring</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#ECE8DF;text-transform:uppercase;margin-bottom:4px;">Score A</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:4px;">Total rounds and repetitions completed during Part A.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A867F;text-transform:uppercase;margin-bottom:14px;">Tie break: Part B.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#ECE8DF;text-transform:uppercase;margin-bottom:4px;">Score B</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:4px;">Total bar muscle-ups completed during Part B.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A867F;text-transform:uppercase;margin-bottom:24px;">Tie break: Time to complete Echo Bike calories.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#ECE8DF;text-transform:uppercase;margin-bottom:4px;">Score A</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:4px;">Total rounds and repetitions completed during Part A.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A867F;text-transform:uppercase;margin-bottom:14px;">Tie break: Part B.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#ECE8DF;text-transform:uppercase;margin-bottom:4px;">Score B</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:4px;">Total bar muscle-ups completed during Part B.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A867F;text-transform:uppercase;margin-bottom:24px;">Tie break: Time to complete Echo Bike calories.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Event flow</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Part A</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:6px;">Double unders and bench press may be divided between teammates in any way. The final movement is completed you go, I go.</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:8px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Part A</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:6px;">Double unders and bench press may be divided between teammates in any way. The final movement is completed you go, I go.</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:8px;">
       <li>RX: 2 peg board ascents (1 ascent each)</li>
       <li>Inters: 2 rope climbs (1 climb each)</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:14px;">Teams continue completing rounds until the eight-minute time cap expires.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Rest</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:14px;">Teams have four minutes to recover and move to the Echo Bike.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Part B</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:26px;">Teams must first complete the prescribed calories on the Echo Bike. Calories may be divided between teammates in any way. Once all calories have been completed, teams immediately begin accumulating bar muscle-ups, divided between teammates in any way until time expires.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:14px;">Teams continue completing rounds until the eight-minute time cap expires.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Rest</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:14px;">Teams have four minutes to recover and move to the Echo Bike.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Part B</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:26px;">Teams must first complete the prescribed calories on the Echo Bike. Calories may be divided between teammates in any way. Once all calories have been completed, teams immediately begin accumulating bar muscle-ups, divided between teammates in any way until time expires.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Equipment &amp; layout</h3>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:18px;">
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:18px;">
       <li>Skipping rope</li>
       <li>Bench press station — 60/40kg male/female</li>
       <li>Peg board (RX)</li>
@@ -608,7 +609,7 @@
     </div>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:10px;">Movement format</h3>
-    <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;text-transform:uppercase;margin-bottom:32px;">
+    <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;text-transform:uppercase;margin-bottom:32px;">
       <thead><tr style="border-bottom:1px solid #A873D9;"><th style="text-align:left;padding:8px 6px;color:#ECE8DF;">Movement</th><th style="text-align:left;padding:8px 6px;color:#ECE8DF;">Format</th></tr></thead>
       <tbody>
         <tr style="border-bottom:1px solid #3A3733;"><td style="padding:8px 6px;">Double unders</td><td style="padding:8px 6px;">Shared as desired</td></tr>
@@ -623,86 +624,86 @@
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#ECE8DF;text-transform:uppercase;margin-bottom:18px;">Workout standards</h3>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Double unders</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Repetitions may be divided between teammates in any way.</li>
       <li>The rope must pass under the feet twice for every jump.</li>
       <li>The rope must continue moving forward throughout the repetition.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Rope passes under the feet only once.</li>
       <li>Missed jump.</li>
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Bench press</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Repetitions may be divided between teammates in any way.</li>
       <li>Each team has one dedicated bench press station.</li>
       <li>Every repetition begins with the barbell at full elbow lockout.</li>
       <li>The barbell must make clear contact with the athlete's chest.</li>
       <li>The repetition is complete when the athlete returns to full elbow lockout.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Failure to begin from full lockout.</li>
       <li>Failure for the barbell to touch the chest.</li>
       <li>Failure to reach full elbow lockout.</li>
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Peg board (RX)</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Completed you go, I go. Each athlete completes one ascent per round.</li>
       <li>Both pegs must begin below the taped start line.</li>
       <li>During the ascent, both pegs must be placed into holes above the designated finish line.</li>
       <li>Male athletes: above the black line. Female athletes: above the red line.</li>
       <li>The repetition is complete once both pegs have returned below the taped start line.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Failure to place both pegs above the designated finish line.</li>
       <li>Failure to return both pegs below the taped start line before beginning the next ascent.</li>
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Rope climb (Inters)</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Completed you go, I go. Each athlete completes one climb per round.</li>
       <li>The repetition begins with both feet on the floor.</li>
       <li>The athlete must touch the top beam before descending.</li>
       <li>The repetition is complete once both feet have returned to the floor.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Failure to touch the top beam.</li>
       <li>Failure to return both feet to the floor before the next athlete begins.</li>
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Echo Bike</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Calories may be divided between teammates in any way.</li>
       <li>Teams must complete all prescribed calories before beginning the bar muscle-ups.</li>
       <li>Athletes may change over at any time.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Beginning bar muscle-ups before all prescribed calories have been completed.</li>
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Bar muscle-up</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Repetitions may be divided between teammates in any way.</li>
       <li>Athletes may perform consecutive repetitions or alternate at any time.</li>
       <li>The movement begins from a hang beneath the bar.</li>
       <li>Kipping and uprise techniques are permitted. Glide kips are not permitted.</li>
       <li>The repetition is complete once the athlete reaches full support above the bar with elbows fully locked out.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;">
       <li>Failure to reach full lockout above the bar.</li>
       <li>Glide kip used.</li>
       <li>Loss of control before the repetition is complete.</li>
@@ -714,29 +715,29 @@
     <h2 style="font-family:'IBM Plex Mono',monospace;font-size:36px;color:#ECE8DF;text-transform:uppercase;margin-bottom:20px;">The Finale</h2>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Overview</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:10px;">Event Four is the final test of The Battle of Beersbridge. This event combines weightlifting and inverted gymnastics under fatigue. Throughout the workout, one athlete will complete the sandbag while their partner completes the squat snatches. Once both athletes have completed their assigned movement, they will complete the prescribed gymnastics movement before beginning the next round.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:10px;">Event Four is the final test of The Battle of Beersbridge. This event combines weightlifting and inverted gymnastics under fatigue. Throughout the workout, one athlete will complete the sandbag while their partner completes the squat snatches. Once both athletes have completed their assigned movement, they will complete the prescribed gymnastics movement before beginning the next round.</p>
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Workout</h3>
-    <div style="border-left:3px solid #A873D9;padding:4px 0 4px 18px;margin-bottom:16px;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.9;color:#ECE8DF;text-transform:uppercase;">
+    <div style="border-left:3px solid #A873D9;padding:4px 0 4px 18px;margin-bottom:16px;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.9;color:#ECE8DF;text-transform:uppercase;">
       For time...<br>4 rounds:<br>4 sandbag to shoulder<br>6 squat snatches<br>80ft handstand walk (RX) || 8 wall walks (Inters)<br>Directly into...<br>4 rounds:<br>4 sandbag to shoulder<br>6 squat snatches<br>8 strict deficit handstand push ups (RX) || 8 handstand push ups (Inters)
     </div>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#ECE8DF;text-transform:uppercase;margin-bottom:24px;">Time cap: 18:00</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#ECE8DF;text-transform:uppercase;margin-bottom:24px;">Time cap: 18:00</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Scoring</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:4px;">Time to complete the workout. If the workout is not completed within the time cap, the score will be the total repetitions completed.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A867F;text-transform:uppercase;margin-bottom:24px;">Tie break: Time to complete round 1.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:4px;">Time to complete the workout. If the workout is not completed within the time cap, the score will be the total repetitions completed.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A867F;text-transform:uppercase;margin-bottom:24px;">Tie break: Time to complete round 1.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Event flow</h3>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:8px;">At the start of every round:</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:12px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:8px;">At the start of every round:</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:12px;">
       <li>One athlete completes all four sandbag to shoulder repetitions.</li>
       <li>Their teammate completes all six squat snatches.</li>
       <li>These can be worked through at the same time.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:8px;">Athletes must switch weightlifting implements every round, meaning each athlete completes four rounds on the sandbag and four rounds on the squat snatches.</p>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:26px;">Once both athletes have completed their assigned movement, they move together to the prescribed gymnastics movement. Gymnastic reps must be split equally.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:8px;">Athletes must switch weightlifting implements every round, meaning each athlete completes four rounds on the sandbag and four rounds on the squat snatches.</p>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#C9C5BD;max-width:6.3in;margin-bottom:26px;">Once both athletes have completed their assigned movement, they move together to the prescribed gymnastics movement. Gymnastic reps must be split equally.</p>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Equipment &amp; layout</h3>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:18px;">
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:18px;">
       <li>Sandbag — 200/150lbs RX, 150/100lbs Inters</li>
       <li>Competition barbell — 70/45kg RX, 50/35kg Inters</li>
       <li>Competition plates</li>
@@ -794,7 +795,7 @@
     </div>
 
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:10px;">Movement format</h3>
-    <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;text-transform:uppercase;margin-bottom:32px;">
+    <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;text-transform:uppercase;margin-bottom:32px;">
       <thead><tr style="border-bottom:1px solid #A873D9;"><th style="text-align:left;padding:8px 6px;color:#ECE8DF;">Movement</th><th style="text-align:left;padding:8px 6px;color:#ECE8DF;">Format</th></tr></thead>
       <tbody>
         <tr style="border-bottom:1px solid #3A3733;"><td style="padding:8px 6px;">Sandbag to shoulder</td><td style="padding:8px 6px;">Assigned (switch every round)</td></tr>
@@ -809,60 +810,60 @@
     <h3 style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#ECE8DF;text-transform:uppercase;margin-bottom:18px;">Workout standards</h3>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Sandbag to shoulder</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>One athlete completes all four repetitions while their partner completes the squat snatches.</li>
       <li>The sandbag begins on the floor and may be lifted to either shoulder.</li>
       <li>The repetition is complete when the athlete is standing at full extension, the sandbag is under control on the shoulder, and the hand opposite the supporting shoulder is visibly away from the body.</li>
       <li>The sandbag may be dropped once the repetition is complete.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Failure to reach full extension.</li>
       <li>Failure to establish control on the shoulder.</li>
       <li>Opposite hand remains in contact with the sandbag or body at completion.</li>
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Squat snatch</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>One athlete completes all six repetitions while their partner completes the sandbag.</li>
       <li>The barbell must move from the floor to overhead in one continuous movement.</li>
       <li>The athlete must pass through a squat, with the hip crease clearly below the top of the knee before standing.</li>
       <li>The repetition is complete when the athlete reaches full hip, knee and elbow extension with the barbell overhead.</li>
       <li>Touch-and-go repetitions are permitted.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Failure to pass below parallel.</li>
       <li>Failure to reach full overhead lockout.</li>
       <li>Loss of control before the repetition is complete.</li>
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Handstand walk (RX)</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Teams complete 80ft each round. Each athlete must complete 40ft each round.</li>
       <li>The distance must be completed in minimum 10ft increments, in any combination of 10ft lengths or greater.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Failure to complete a minimum 10ft before changing athletes.</li>
       <li>Failure to complete the prescribed 40ft per athlete.</li>
       <li>Failure to complete the full 80ft as a team.</li>
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Wall walk (Inters)</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Teams complete 8 repetitions each round. Each athlete must complete 4 repetitions.</li>
       <li>Each repetition begins with the athlete lying prone on the floor with the feet touching the wall.</li>
       <li>Hands must be touching the start line before beginning the repetition, and must remain there until both feet are in contact with the wall.</li>
       <li>The athlete walks the hands to the target line. Hands must return to the start line before the feet leave the wall.</li>
       <li>The repetition is complete once both feet and the chest have returned to the floor.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Hands leave the start line before both feet are on the wall.</li>
       <li>Failure to reach the target line.</li>
       <li>Hands do not return to the start line before the feet leave the wall.</li>
@@ -871,16 +872,16 @@
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Strict deficit handstand push up (RX)</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Teams complete 8 repetitions each round. Each athlete must complete 4 repetitions.</li>
       <li>Every repetition begins from a fully locked out handstand position. Only the athlete's heels may be in contact with the wall.</li>
       <li>Hands must remain on the marked lines throughout the repetition.</li>
       <li>The head must make clear contact with the prescribed target.</li>
       <li>The repetition is complete once the athlete returns to full elbow lockout. Strict repetitions only.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:22px;">
       <li>Use of a kip.</li>
       <li>Failure to begin from full lockout.</li>
       <li>Failure to touch the prescribed target.</li>
@@ -891,16 +892,16 @@
     </ul>
 
     <h4 style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:#ECE8DF;text-transform:uppercase;margin-bottom:8px;">Handstand push up (Inters)</h4>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">Standard</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
       <li>Teams complete 8 repetitions each round. Each athlete must complete 4 repetitions.</li>
       <li>Every repetition begins from a fully locked out handstand position. Only the athlete's heels may be in contact with the wall.</li>
       <li>Hands must remain on the marked lines throughout the repetition.</li>
       <li>The head must make clear contact with the prescribed target.</li>
       <li>The repetition is complete once the athlete returns to full elbow lockout. Strict and kipping repetitions are permitted.</li>
     </ul>
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
-    <ul style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8A6BAE;text-transform:uppercase;margin-bottom:6px;">No rep</p>
+    <ul style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;color:#C9C5BD;display:flex;flex-direction:column;gap:6px;">
       <li>Failure to begin from full lockout.</li>
       <li>Failure to touch the prescribed target.</li>
       <li>Failure to reach full elbow lockout.</li>
@@ -911,6 +912,38 @@
   </div>
 
 </x-import>
+</div>
+
+<script>
+(function(){
+  function host(){ return document.querySelector('doc-page') || document.querySelector('[component-from-global-scope="doc-page"]'); }
+  function fit(){
+    var wrap = document.getElementById('doc-scale-wrap');
+    var el = host();
+    if (!wrap || !el) return;
+    el.style.transformOrigin = 'top left';
+    var prevTransform = el.style.transform;
+    el.style.transform = '';
+    var natural = el.scrollWidth;
+    if (!natural) { el.style.transform = prevTransform; return; }
+    var avail = wrap.clientWidth;
+    var scale = avail > 0 && avail < natural ? avail / natural : 1;
+    if (scale < 1) {
+      el.style.transform = 'scale(' + scale + ')';
+      wrap.style.height = (el.scrollHeight * scale) + 'px';
+    } else {
+      el.style.transform = '';
+      wrap.style.height = '';
+    }
+  }
+  window.addEventListener('resize', fit);
+  window.addEventListener('load', fit);
+  document.addEventListener('DOMContentLoaded', fit);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  var tries = 0;
+  var iv = setInterval(function(){ fit(); if (++tries > 40) clearInterval(iv); }, 150);
+})();
+</script>
 
 </x-dc>
 </body>
