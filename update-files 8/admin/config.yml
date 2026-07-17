@@ -1,0 +1,252 @@
+# ============================================================
+#  CrossFit TBB — Content admin (Sveltia CMS) configuration
+# ============================================================
+#
+#  ONE PLACEHOLDER TO FILL IN DURING SETUP (see the launch guide):
+#    backend.repo  ->  already set to gerard-d-kelly/crossfit-tbb
+#
+#  Logging in: the simplest method (one person) is "Sign in with
+#  token" on the login screen — no extra setup needed. If you'd
+#  prefer a one-click "Sign in with GitHub" button later, deploy the
+#  free auth worker and uncomment the base_url line below.
+#
+#  Repo is pre-filled below — nothing to change for normal use.
+# ------------------------------------------------------------
+
+backend:
+  name: github
+  repo: gerard-d-kelly/crossfit-tbb
+  branch: main
+  # base_url: https://YOUR-SVELTIA-AUTH.workers.dev  # optional — only for the "Sign in with GitHub" button
+
+# Where uploaded images are stored / linked from.
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+site_url: https://crossfit-tbb.co.uk
+display_url: https://crossfit-tbb.co.uk
+logo_url: https://crossfit-tbb.co.uk/assets/apple-touch-icon.png
+
+# Sentence-case everything in the editor, to match the site's voice.
+collections:
+  - name: homepage
+    label: Homepage & media
+    description: Edit the homepage headline copy, and swap the photos and cinematic hero video. Leave any field empty to keep what's currently on the site.
+    files:
+      - name: site
+        label: Homepage copy & media
+        file: content/site.json
+        description: Headline copy plus your own gym photos and hero video. Changes go live a minute after you publish.
+        fields:
+          - name: hero_kicker
+            label: "Hero — small line above the headline"
+            widget: string
+            required: false
+            hint: "e.g. BELFAST'S PUREST CROSSFIT SPACE. Leave empty to keep the current line."
+          - name: hero_headline
+            label: "Hero — main headline"
+            widget: string
+            required: false
+            hint: "e.g. Stronger every session. Keep it short — two to four words reads best."
+          - name: hero_lede
+            label: "Hero — supporting sentence"
+            widget: text
+            required: false
+            hint: "e.g. Structured, coach-led CrossFit for every level — from your first class to the competition floor."
+          - name: hero_video
+            label: Hero background video
+            widget: file
+            required: false
+            media_library: { config: { max_file_size: 15728640 } }
+            hint: Optional. A short, wide clip (MP4, ideally under ~10 MB) that plays muted behind the homepage headline. Leave empty to use the hero photo instead.
+          - name: hero_image
+            label: Hero photo (and video fallback)
+            widget: image
+            required: false
+            hint: The main homepage photo. Also shown while the video loads, or if a visitor's browser blocks autoplay.
+          - name: recovery_image
+            label: Recovery suite photo
+            widget: image
+            required: false
+            hint: Photo for the "Premium recovery" section (sauna · cold plunge · physio). Also shown while the recovery video loads, or if there's no video.
+          - name: recovery_video
+            label: Recovery suite video
+            widget: file
+            required: false
+            media_library: { config: { max_file_size: 15728640 } }
+            hint: Optional. A short, looping clip (MP4, ideally under ~10 MB) that plays muted in the "Premium recovery" section. Leave empty to show the photo instead.
+          - name: member1_photo
+            label: Member story photo — Rachel M.
+            widget: image
+            required: false
+          - name: member2_photo
+            label: Member story photo — Conor D.
+            widget: image
+            required: false
+          - name: member3_photo
+            label: Member story photo — Aoife K.
+            widget: image
+            required: false
+
+      - name: copy
+        label: Homepage copy
+        file: content/copy.json
+        description: The main wording on the homepage, section by section. Edit and publish — changes go live a minute later.
+        fields:
+          - name: about
+            label: "Section 01 — About"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: heading, label: Section heading, widget: text }
+              - name: pillar1
+                label: "Pillar 1"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: pillar2
+                label: "Pillar 2"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: pillar3
+                label: "Pillar 3"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: pillar4
+                label: "Pillar 4"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+          - name: offers
+            label: "Section 02 — What we offer"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: heading, label: Section heading, widget: text }
+              - name: card1
+                label: "Card 1 — CrossFit classes"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: card2
+                label: "Card 2 — Open gym"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: card3
+                label: "Card 3 — Competitor training"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - name: card4
+                label: "Card 4 — Recovery services (wide card)"
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+          - name: faq
+            label: "Section 03 — Membership FAQ"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: q1, label: "Question 1", widget: string }
+              - { name: a1, label: "Answer 1", widget: text }
+              - { name: q2, label: "Question 2", widget: string }
+              - { name: a2, label: "Answer 2", widget: text }
+              - { name: q3, label: "Question 3", widget: string }
+              - { name: a3, label: "Answer 3", widget: text }
+              - { name: q4, label: "Question 4", widget: string }
+              - { name: a4, label: "Answer 4", widget: text }
+          - name: stories
+            label: "Section 05 — Member stories"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: heading, label: Section heading, widget: text }
+              - name: story1
+                label: "Story 1 (large card)"
+                widget: object
+                fields:
+                  - { name: quote, label: Quote, widget: text, hint: "Include the quotation marks." }
+                  - { name: name, label: Member name, widget: string }
+                  - { name: meta, label: "Detail line (e.g. Member · 1 year)", widget: string }
+              - name: story2
+                label: "Story 2"
+                widget: object
+                fields:
+                  - { name: quote, label: Quote, widget: text, hint: "Include the quotation marks." }
+                  - { name: name, label: Member name, widget: string }
+                  - { name: meta, label: "Detail line", widget: string }
+              - name: story3
+                label: "Story 3"
+                widget: object
+                fields:
+                  - { name: quote, label: Quote, widget: text, hint: "Include the quotation marks." }
+                  - { name: name, label: Member name, widget: string }
+                  - { name: meta, label: "Detail line", widget: string }
+          - name: cta
+            label: "Bottom call-to-action band"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: kicker, label: Small line above the headline, widget: string }
+              - { name: headline, label: Headline, widget: string }
+              - { name: lede, label: Supporting sentence, widget: text }
+              - { name: button, label: Button label, widget: string }
+
+  - name: content
+    label: Resource Hub
+    description: Add, edit, reorder and delete the articles that appear on the Resource Hub.
+    files:
+      - name: articles
+        label: Articles
+        file: content/articles.json
+        description: Every Resource Hub article. Drag to reorder; the newest date shows first on the site.
+        fields:
+          - name: articles
+            label: Articles
+            label_singular: Article
+            widget: list
+            summary: '{{fields.title}}  ·  {{fields.category}}'
+            fields:
+              - { name: title, label: Title, widget: string }
+              - name: slug
+                label: Slug (the bit in the web address)
+                widget: string
+                pattern: ['^[a-z0-9-]+$', 'Lowercase letters, numbers and dashes only']
+                hint: e.g. how-to-scale-a-workout — keep it unchanged once published so links don't break.
+              - name: category
+                label: Category
+                widget: select
+                options: [Training, Nutrition, Beginners, Competition, Community]
+                default: Training
+              - { name: excerpt, label: Excerpt (shows on cards & previews), widget: text }
+              - { name: author, label: Author, widget: string, default: TBB Team }
+              - { name: role, label: Author role, widget: string, default: CrossFit TBB, required: false }
+              - name: date
+                label: Date
+                widget: datetime
+                date_format: YYYY-MM-DD
+                time_format: false
+                format: YYYY-MM-DD
+              - { name: tags, label: Tags, widget: list, default: [], required: false }
+              - { name: featured, label: Pin as the featured (hero) article, widget: boolean, default: false }
+              - name: cover
+                label: Cover photo
+                widget: image
+                required: false
+                hint: Optional. If left empty, a tasteful category placeholder is used.
+              - { name: avatar, label: Author photo, widget: image, required: false }
+              - name: body
+                label: Article body
+                widget: markdown
+                hint: 'Tip: a quote line starting with **Coach''s note** renders as a highlighted callout box.'
