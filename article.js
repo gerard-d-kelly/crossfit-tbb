@@ -74,7 +74,7 @@
       a.innerHTML =
         '<div class="hc-media">' +
           '<span class="hc-cat">' + esc(p.category) + '</span>' +
-          '<image-slot id="' + window.TBB_coverId(p) + '" src="' + window.TBB_coverSrc(p) + '" placeholder="Cover"></image-slot>' +
+          '<image-slot id="' + window.TBB_coverId(p) + '" src="' + window.TBB_coverSrc(p) + '" shape="rect" placeholder="Cover"></image-slot>' +
         '</div>' +
         '<div class="hc-body">' +
           '<h3>' + esc(p.title) + '</h3>' +
