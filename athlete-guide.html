@@ -988,8 +988,27 @@
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
   var tries = 0;
   var iv = setInterval(function(){ fit(); if (++tries > 40) clearInterval(iv); }, 150);
+
+  // Contents links jump fine going down, but native #hash scrolling breaks
+  // once the doc is visually scaled (fit() above) -- the browser can end up
+  // unable to scroll back above the target. Do the scroll ourselves instead,
+  // measured post-scale, so it behaves like a normal page in both directions.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    var target = id && document.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    var y = target.getBoundingClientRect().top + window.pageYOffset - 24;
+    window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+  });
 })();
 </script>
+
+<a href="index.html" aria-label="Back to homepage" style="position:fixed;right:24px;bottom:24px;z-index:999;width:52px;height:52px;border-radius:50%;background:#A855D1;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,0.4);text-decoration:none;">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5"/><path d="M5 9v11a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9"/></svg>
+</a>
 
 </x-dc>
 </body>
